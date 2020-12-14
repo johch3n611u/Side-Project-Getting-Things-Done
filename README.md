@@ -24,4 +24,6 @@
 
 <https://www.managertoday.com.tw/articles/view/55903>
 
+<https://www.google.com/search?q=pdca&sxsrf=ALeKk03vWpjqSslXjisIUvHccV4F--_Yww:1607876224763&tbm=isch&source=iu&ictx=1&fir=DkLLHwao4bQjQM%252Ca7g5rw75AOFdDM%252C_&vet=1&usg=AI4_-kRl8T7ddsy63bo5ZxLwbcfG2gj2Qg&sa=X&ved=2ahUKEwjq0-DZrcvtAhWtxIsBHfAjAFAQ_h16BAgMEAE#imgrc=DkLLHwao4bQjQM>
+
 ...
