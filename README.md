@@ -24,7 +24,9 @@
 
 <https://www.itread01.com/hklxhkihk.html>
 
-## GTD 詳解
+## OKR KPI GTD 詳解
+
+再直接構想資料結構時，必須真的了解 DomainKnowhow 才有利設計出真正符合需求的架構
 
 ...
 
