@@ -28,6 +28,8 @@
 
 再直接構想資料結構時，必須真的了解 DomainKnowhow 才有利設計出真正符合需求的架構
 
+<https://www.managertoday.com.tw/articles/view/55903>
+
 ...
 
 ## 參考
