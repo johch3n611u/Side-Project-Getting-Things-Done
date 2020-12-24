@@ -14,7 +14,15 @@
 
 ## 架構分析
 
+首先要由資料結構先處理，架構反而其次需要先評估需求才能決定
+
 ...
+
+## 資料結構
+
+<https://dbdiagram.io/>
+
+<https://www.itread01.com/hklxhkihk.html>
 
 ## GTD 詳解
 
