@@ -63,6 +63,10 @@
 
 參考上篇趨勢，最後選定 Vue3 加上 Firebase
 
+## 框架研究
+
+* Vue3 <https://book.vue.tw/>
+* Firebase <https://github.com/johch3n611u/Side-Project-Firebase-to-WebDatabase/blob/main/README.md>
 ## 參考
 
 <https://www.managertoday.com.tw/articles/view/55903>
