@@ -24,6 +24,14 @@
 
 <https://www.itread01.com/hklxhkihk.html>
 
+## OKR KPI GTD 詳解
+
+再直接構想資料結構時，必須真的了解 Domain Knowhow 與 Use case 才有利設計出真正符合需求的架構
+
+<https://www.managertoday.com.tw/articles/view/55903>
+
+<https://www.managertoday.com.tw/articles/view/55927>
+
 ## Use case
 
 ![alt](/assets/img/未命名_LI.jpg)
@@ -48,15 +56,10 @@
 2. 需有行程檢視與自動排除功能
 3. GTD 功能 / TAG 分類
 4. 架構需 MVP 且能夠漸進延展功能
-## OKR KPI GTD 詳解
 
-再直接構想資料結構時，必須真的了解 DomainKnowhow 才有利設計出真正符合需求的架構
+## 架構研擬
 
-<https://www.managertoday.com.tw/articles/view/55903>
-
-<https://www.managertoday.com.tw/articles/view/55927>
-
-...
+<https://www.monterail.com/blog/vue-vs-react-2020#:~:text=One%20of%20the%20biggest%20differences,the%20view%20layer%20is%20built.&text=In%20React%2C%20on%20the%20other,how%20to%20create%20Web%20applications.>
 
 ## 參考
 
