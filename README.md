@@ -53,8 +53,8 @@
 ### 總結以下幾點
 
 1. KISS ( Keep It Simple, Stupid )
-2. 需有行程檢視與自動排除功能
-3. GTD 功能 / TAG 分類
+2. 需有行程檢視與自動排除功能 Calendar
+3. GTD 功能 ( 收集箱 / ToDoList ) / Tag 分類
 4. 架構需 MVP 且能夠漸進延展功能
 
 ## 架構研擬
