@@ -34,7 +34,7 @@
 
 詳細了解後才發現，其實以上就跟後端 bat 批次檔案，根本大同小異... 
 
-## 其實就是 cmd 利用命令讓程式把 某種語言編譯成 瀏覽器看得懂的 html5 (html / css /js /webassembly) 如此而已
+### 其實就是 cmd 利用命令讓程式把 某種語言編譯成 瀏覽器看得懂的 html5 (html / css /js /webassembly) 如此而已
 
 那什麼是 [Kuro Hsu](https://book.vue.tw/CH1/1-1-introduction.html) 、 黑暗執行緒 所提及之 輕前端 (單純用 script 引入之套件)
 
