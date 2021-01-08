@@ -2,7 +2,7 @@
 
 ## 引言
 
-先前想依照 OKR KPI 做的管理工具，目前看來是失敗了，
+先前想依照 [OKR KPI 做的管理工具](https://github.com/johch3n611u/Side-Project-Firebase-to-WebDatabase)，目前看來是失敗了，
 
 看起來還是要利用框架優先想好資料結構才便於存取與渲染，
 
@@ -12,15 +12,25 @@
 
 並先想好架構在開發以免碰上相同問題，改由後來接觸到感覺更適合的管理方法 GTD。
 
-在架構上一開始覺得可以使用 vue + firebase + github page 但受到後續 studio 影響，
+---
 
-原本在上面架構與 angular + .net core + heroku 抉擇，想說要不要統一就好省事，
+在架構上一開始覺得可以使用 `vue + firebase + github page` 但受到後續 studio 影響，
+
+原本在上面架構與 `angular + .net core + heroku` 抉擇，想說要不要統一就好省事，
 
 後來接觸到以下心得 順道接續之前幫老弟製作的專案 [Try-Swagger-RESTfulAPI](https://github.com/johch3n611u/Side-Project-Try-Swagger-RESTfulAPI) 將一切都解釋清楚
 
 ---
 
-以往沒有一堆前端框架時引入函式庫只要 script src 即可
+以往沒有一堆前端框架時引入函式庫只要 script src 即可，
+
+到後來一堆前端框架與函式庫也衍生了 NPM Webpack cli 這些預先處理的工具， 
+
+> 可以參考這兩篇文章了解生態演變
+>
+> [hulis前端生態演變](https://medium.com/hulis-blog/frontend-engineer-guide-297821512f4e)
+>
+> [Github 從有 jq 到無 jq](https://www.infoq.cn/article/removing-jquery-from-github-frontend/)
 
 那什麼是 [Kuro Hsu](https://book.vue.tw/CH1/1-1-introduction.html) 、 黑暗執行緒 所提及之 輕前端 (單純用 script 引入之套件)
 
