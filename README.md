@@ -24,13 +24,17 @@
 
 以往沒有一堆前端框架時引入函式庫只要 script src 即可，
 
-到後來一堆前端框架與函式庫也衍生了 NPM Webpack cli 這些預先處理的工具， 
+到後來一堆前端框架與函式庫也衍生了 NPM Webpack cli SASS etc... 這些預先處理的工具， 
 
 > 可以參考這兩篇文章了解生態演變
 >
 > [hulis前端生態演變](https://medium.com/hulis-blog/frontend-engineer-guide-297821512f4e)
 >
 > [Github 從有 jq 到無 jq](https://www.infoq.cn/article/removing-jquery-from-github-frontend/)
+
+詳細了解後才發現，其實以上就跟後端 bat 批次檔案，根本大同小異... 
+
+## 其實就是 cmd 利用命令讓程式把 某種語言編譯成 瀏覽器看得懂的 html5 (html / css /js /webassembly) 如此而已
 
 那什麼是 [Kuro Hsu](https://book.vue.tw/CH1/1-1-introduction.html) 、 黑暗執行緒 所提及之 輕前端 (單純用 script 引入之套件)
 
