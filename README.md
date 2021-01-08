@@ -61,6 +61,8 @@
 * 小工具 -> script 引入的 vue ([現行版本 v3](https://v3.cn.vuejs.org/guide/installation.html))
 * 站台 / 平台 -> angular + .net core + etc...
 
+以上...
+
 ## 資料結構
 
 <https://dbdiagram.io/>
