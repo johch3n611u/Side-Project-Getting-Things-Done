@@ -12,6 +12,20 @@
 
 並先想好架構在開發以免碰上相同問題，改由後來接觸到感覺更適合的管理方法 GTD。
 
+在架構上一開始覺得可以使用 vue + firebase + github page 但受到後續 studio 影響，
+
+原本在上面架構與 angular + .net core + heroku 抉擇，想說要不要統一就好省事，
+
+後來接觸到以下心得 順道接續之前幫老弟製作的專案 [Try-Swagger-RESTfulAPI](https://github.com/johch3n611u/Side-Project-Try-Swagger-RESTfulAPI)
+
+[Kuro Hsu](https://book.vue.tw/CH1/1-1-introduction.html) 、 黑暗執行緒 所提及之 輕前端
+
+我覺得可以很明顯的發現到，其實要做 站台 / 平台 基本上就要全包，很少不包的，那應該就依照以下方式起架構即可
+
+* 小工具 -> script 引入的 vue ([現行版本 v3](https://v3.cn.vuejs.org/guide/installation.html))
+* 站台 / 平台 -> angular + .net core + etc...
+
+
 ## 架構分析
 
 首先要由資料結構先處理，架構反而其次需要先評估需求才能決定
