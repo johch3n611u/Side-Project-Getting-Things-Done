@@ -16,9 +16,13 @@
 
 原本在上面架構與 angular + .net core + heroku 抉擇，想說要不要統一就好省事，
 
-後來接觸到以下心得 順道接續之前幫老弟製作的專案 [Try-Swagger-RESTfulAPI](https://github.com/johch3n611u/Side-Project-Try-Swagger-RESTfulAPI)
+後來接觸到以下心得 順道接續之前幫老弟製作的專案 [Try-Swagger-RESTfulAPI](https://github.com/johch3n611u/Side-Project-Try-Swagger-RESTfulAPI) 將一切都解釋清楚
 
-[Kuro Hsu](https://book.vue.tw/CH1/1-1-introduction.html) 、 黑暗執行緒 所提及之 輕前端
+---
+
+以往沒有一堆前端框架時引入函式庫只要 script src 即可
+
+那什麼是 [Kuro Hsu](https://book.vue.tw/CH1/1-1-introduction.html) 、 黑暗執行緒 所提及之 輕前端 (單純用 script 引入之套件)
 
 我覺得可以很明顯的發現到，其實要做 站台 / 平台 基本上就要全包，很少不包的，那應該就依照以下方式起架構即可
 
