@@ -24,7 +24,7 @@
 
 以往沒有一堆前端框架時引入函式庫只要 script src 即可，
 
-到後來一堆前端框架與函式庫也衍生了 NPM Webpack cli SASS hexo etc... 這些預先處理的工具，
+到後來一堆前端框架與函式庫，也衍生了 NPM Webpack cli SASS hexo etc... 這些預先處理的工具，
 
 > 可以參考這兩篇文章了解生態演變
 >
@@ -42,7 +42,7 @@
 
 ---
 
-那什麼是 [Kuro Hsu](https://book.vue.tw/CH1/1-1-introduction.html) 、 黑暗執行緒 所提及之 `輕前端` (其實就是單純用 script 引入之套件)
+那什麼是 [Kuro Hsu](https://book.vue.tw/CH1/1-1-introduction.html) 、 黑暗執行緒 所提及之 `輕前端` ( 其實就是單純用 script 引入之套件 )
 
 所以 vue 漸進式框架 其實就只要採用 `script 引入` 能用到的功能即可，
 
