@@ -36,7 +36,7 @@
 
 詳細了解後才發現，其實以上就跟[後端 bat 批次檔案](https://github.com/johch3n611u/Experience-of-Cinda-Company/tree/master/Batch.Demo)，根本大同小異...
 
-### 其實就是 cmd 利用命令，讓程式把 某種`語言 e.g. razor typescript jsx etc...`編譯成 瀏覽器看得懂的 html5 (html / css /js /webassembly) 如此而已，
+### 其實就是 cmd 利用命令，讓程式把 某種`語言` e.g. razor typescript jsx etc... 編譯成 瀏覽器看得懂的 html5 (html / css /js /webassembly) 如此而已，
 
 所以在後端 ( 或是 angular ) 其實架構較穩定下 ( 版本不會隨意改變且通常向低版本相容 )，
 
