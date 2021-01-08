@@ -12,7 +12,7 @@
 
 並先想好架構在開發以免碰上相同問題，改由後來接觸到感覺更適合的管理方法 GTD。
 
----
+## 架構分析
 
 在架構上一開始覺得可以使用 `vue + firebase + github page` 但受到後續 studio 影響，
 
@@ -58,13 +58,6 @@
 
 * 小工具 -> script 引入的 vue ([現行版本 v3](https://v3.cn.vuejs.org/guide/installation.html))
 * 站台 / 平台 -> angular + .net core + etc...
-
-
-## 架構分析
-
-首先要由資料結構先處理，架構反而其次需要先評估需求才能決定
-
-...
 
 ## 資料結構
 
