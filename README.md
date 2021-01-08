@@ -24,7 +24,7 @@
 
 以往沒有一堆前端框架時引入函式庫只要 script src 即可，
 
-到後來一堆前端框架與函式庫也衍生了 NPM Webpack cli SASS etc... 這些預先處理的工具， 
+到後來一堆前端框架與函式庫也衍生了 NPM Webpack cli SASS hexo etc... 這些預先處理的工具， 
 
 > 可以參考這兩篇文章了解生態演變
 >
@@ -34,11 +34,23 @@
 
 詳細了解後才發現，其實以上就跟後端 bat 批次檔案，根本大同小異... 
 
-### 其實就是 cmd 利用命令讓程式把 某種語言編譯成 瀏覽器看得懂的 html5 (html / css /js /webassembly) 如此而已
+### 其實就是 cmd 利用命令讓程式把 某種語言編譯成 瀏覽器看得懂的 html5 (html / css /js /webassembly) 如此而已，
 
-那什麼是 [Kuro Hsu](https://book.vue.tw/CH1/1-1-introduction.html) 、 黑暗執行緒 所提及之 輕前端 (單純用 script 引入之套件)
+所以在後端 ( 或是 angular ) 其實架構較穩定下 ( 版本不會隨意改變且通常向低版本相容 )，
 
-我覺得可以很明顯的發現到，其實要做 站台 / 平台 基本上就要全包，很少不包的，那應該就依照以下方式起架構即可
+感覺前端就應該只採用`輕前端`就好，盡量不要耦合一堆其他技術避免技術棧拉得很高，難維護也增加開發難度，
+
+---
+
+那什麼是 [Kuro Hsu](https://book.vue.tw/CH1/1-1-introduction.html) 、 黑暗執行緒 所提及之 `輕前端` (其實就是單純用 script 引入之套件)
+
+所以 vue 漸進式框架 其實就只要採用 `script 引入` 能用到的功能即可，
+
+其餘就轉 angular 利用 ng 的一致性、向下兼容 這些就由 google 開發團隊煩惱，我們顧商業邏輯即可...
+
+---
+
+根據以上我覺得可以很明顯的發現到，其實要做 站台 / 平台 基本上就要全包，很少不包的，那應該就依照以下方式起架構即可
 
 * 小工具 -> script 引入的 vue ([現行版本 v3](https://v3.cn.vuejs.org/guide/installation.html))
 * 站台 / 平台 -> angular + .net core + etc...
