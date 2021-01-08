@@ -34,7 +34,7 @@
 >
 > [Github 從有 jq 到無 jq](https://www.infoq.cn/article/removing-jquery-from-github-frontend/)
 
-詳細了解後才發現，其實以上就跟後端 bat 批次檔案，根本大同小異...
+詳細了解後才發現，其實以上就跟[後端 bat 批次檔案](https://github.com/johch3n611u/Experience-of-Cinda-Company/tree/master/Batch.Demo)，根本大同小異...
 
 ### 其實就是 cmd 利用命令讓程式把 某種語言編譯成 瀏覽器看得懂的 html5 (html / css /js /webassembly) 如此而已，
 
