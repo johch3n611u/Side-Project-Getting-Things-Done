@@ -24,7 +24,7 @@
 
 以往沒有一堆前端框架時引入函式庫只要 script src 即可，
 
-到後來一堆前端框架與函式庫也衍生了 NPM Webpack cli SASS hexo etc... 這些預先處理的工具， 
+到後來一堆前端框架與函式庫也衍生了 NPM Webpack cli SASS hexo etc... 這些預先處理的工具，
 
 > 可以參考這兩篇文章了解生態演變
 >
@@ -32,7 +32,7 @@
 >
 > [Github 從有 jq 到無 jq](https://www.infoq.cn/article/removing-jquery-from-github-frontend/)
 
-詳細了解後才發現，其實以上就跟後端 bat 批次檔案，根本大同小異... 
+詳細了解後才發現，其實以上就跟後端 bat 批次檔案，根本大同小異...
 
 ### 其實就是 cmd 利用命令讓程式把 某種語言編譯成 瀏覽器看得懂的 html5 (html / css /js /webassembly) 如此而已，
 
@@ -49,6 +49,10 @@
 其餘就轉 angular 利用 ng 的一致性、向下兼容 這些就由 google 開發團隊煩惱，我們顧商業邏輯即可...
 
 ---
+
+<https://forum.quasar-framework.org/topic/5878/need-advice-angular-or-vue-and-quasar/6>
+
+![alt](/assets/img/1-1-progressive.4dd3f497.png)
 
 根據以上我覺得可以很明顯的發現到，其實要做 站台 / 平台 基本上就要全包，很少不包的，那應該就依照以下方式起架構即可
 
