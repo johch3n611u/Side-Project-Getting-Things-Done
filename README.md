@@ -65,6 +65,10 @@
 
 ## 資料結構
 
+![alt](/assets/img/taskid.png)
+
+這次要使用的是 firebase NoSql ，所以就不使用以下工具了。
+
 <https://dbdiagram.io/>
 
 <https://www.itread01.com/hklxhkihk.html>
@@ -98,8 +102,8 @@
 ### 總結以下幾點
 
 1. KISS ( Keep It Simple, Stupid )
-2. 需有行程檢視與自動排除功能 Calendar
-3. GTD 功能 ( 收集箱 / ToDoList ) / Tag 分類
+2. GTD 功能 ( 收集箱 / ToDoList ) / Tag 分類
+3. 需有行程檢視與自動排除功能 Calendar
 4. 架構需 MVP 且能夠漸進延展功能
 
 ![alt](/assets/img/img-1525241366-42254@900.jpg)
