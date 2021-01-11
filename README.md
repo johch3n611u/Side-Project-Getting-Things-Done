@@ -102,6 +102,8 @@
 3. GTD 功能 ( 收集箱 / ToDoList ) / Tag 分類
 4. 架構需 MVP 且能夠漸進延展功能
 
+![alt](/assets/img/img-1525241366-42254@900.jpg)
+
 ## 架構研擬
 
 <https://www.monterail.com/blog/vue-vs-react-2020#:~:text=One%20of%20the%20biggest%20differences,the%20view%20layer%20is%20built.&text=In%20React%2C%20on%20the%20other,how%20to%20create%20Web%20applications.>
