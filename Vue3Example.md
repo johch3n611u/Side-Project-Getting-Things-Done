@@ -1,6 +1,6 @@
 # Vue3Example
 
-## ⭐⭐⭐ 組件範例 ⭐⭐⭐
+## ⭐ 組件範例 ⭐
 
 * <https://v3.cn.vuejs.org/>
 * <https://book.vue.tw/>
@@ -50,7 +50,7 @@
 </script>
 ```
 
-## ⭐⭐⭐ 局部註冊 ⭐⭐⭐
+## ⭐ 局部註冊 ⭐
 
 * <https://v3.cn.vuejs.org/guide/component-registration.html#%E5%B1%80%E9%83%A8%E6%B3%A8%E5%86%8C>
 
@@ -69,7 +69,7 @@ const ComponentB = {
 }
 ```
 
-## ⭐⭐⭐ Props in, Event out 单向数据流 / Vue3 v-model 雙向綁定 ⭐⭐⭐
+## ⭐ Props in, Event out 单向数据流 / Vue3 v-model 雙向綁定 ⭐
 
 * <https://book.vue.tw/CH2/2-2-communications.html>
 
@@ -168,13 +168,13 @@ app.mount('#app');
 <input :value="searchText" @input="searchText = $event.target.value" />
 ```
 
-## ⭐⭐⭐ is 動態元件 / slot 插槽 ⭐⭐⭐
+## ⭐ is 動態元件 / slot 插槽 ⭐
 
 * <https://book.vue.tw/CH2/2-3-async-dynamic-components.html>
 * v-is 情境 table 內需要出現不是 th tr td 的 tag
 * <https://book.vue.tw/CH2/2-4-slots.html>
 
-## ⭐⭐⭐  Provide / Inject => 類似 Angular 的 Service 可能需要這種功能時就要考慮導入 AG ⭐⭐⭐
+## ⭐  Provide / Inject => 類似 Angular 的 Service 可能需要這種功能時就要考慮導入 AG ⭐
 
 * 注入的資料不可變，但可以藉由，注入點用 Computed 包裝，成為連動資料
 
@@ -182,7 +182,7 @@ app.mount('#app');
 
 * <https://v3.cn.vuejs.org/guide/reactivity.html>
 
-## ⭐⭐⭐ Composition API ⭐⭐⭐
+## ⭐ Composition API ⭐
 
 * [Vue Composition API EasonLin 上](https://uu9924079.medium.com/vue-composition-api-%E7%AD%86%E8%A8%98-%E4%B8%8A-d60eabe3f469)
 * [Vue Composition API EasonLin 下](https://uu9924079.medium.com/vue-composition-api-%E7%AD%86%E8%A8%98-%E4%B8%8B-4f7e25cdd14)
@@ -192,8 +192,12 @@ app.mount('#app');
   * 組件太大，需要依功能分類時可使用
   * 需要跨組件使用程式碼或狀態
 
-https://book.vue.tw/CH2/2-2-communications.html#vue-composition-api
-https://jsfiddle.net/kurotanshi/8hsc2yjg/
+### Vue3 API Example
 
-https://book.vue.tw/CH2/2-5-transitions.html
-https://jsfiddle.net/kurotanshi/sdmkh7qa/
+* <https://book.vue.tw/CH2/2-2-communications.html#vue-composition-api>
+* <https://jsfiddle.net/kurotanshi/8hsc2yjg/>
+
+### Vue3 Composition API Example
+
+* <https://book.vue.tw/CH2/2-5-transitions.html>
+* <https://jsfiddle.net/kurotanshi/sdmkh7qa/>
