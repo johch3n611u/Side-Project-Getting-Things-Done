@@ -255,10 +255,76 @@
         //   }
         // })
 
-        //
+        //  ⭐⭐ 注入的資料不可變，但可以藉由，注入點用 Computed 包裝，成為連動資料
+
+        // 將 provide 透過 Vue.computed 包裝
+        // provide() {
+        //     return {
+        //         provideMsg: this.msg,
+        //         provideMsg2: Vue.computed(() => this.msg)
+        //     };
+        //  }
+
+        // 'list-item': {
+        //     // 由於傳入的是透過 Vue.computed 包裝後的物件，所以要加上 .value
+        //     // 有關 .value 的用法在本書最後一章 Composition API 會有更詳細的說明
+        //      inject: ['provideMsg', 'provideMsg2'],
+        //      template: ` <div>provideMsg: {{ provideMsg }}!</div> <div>provideMsg2: {{ provideMsg2.value }}!</div> `
+        //  }
 
         // ⭐ 声明响应式状态 => 類似 Rxjs 觀察者實例
         // https://v3.cn.vuejs.org/guide/reactivity.html#%E4%BB%80%E4%B9%88%E6%98%AF%E5%93%8D%E5%BA%94%E6%80%A7
+
+        // ⭐ 3.0 Vue Composition API 可取代 Vuex ?
+
+        // 除了 Vuex 之外，Vue 3.0 起新增的 Vue Composition API 也可以用來處理跨元件的資料與程式邏輯共享。
+        // 這裏我們將上一個範例用 Composition API 來改寫，首先抽取出共用的邏輯與方法：
+        // ⭐⭐ https://jsfiddle.net/kurotanshi/8hsc2yjg/
+
+        // // 共用邏輯
+        // const sum = ref(0);
+        // const plus = () => sum.value++;
+        // const reset = () => sum.value = 0;
+
+        // // 再來，定義父子元件內容，新增的 setup 函式是用來建立與啟動我們的元件，並將模板 <template> 會用到的東西 return 出去：
+
+        // // 父層、根元件
+        // const app = createApp({
+        //     setup() {
+        //         // 將模板用到的 sum, plus 回傳出去
+        //         return { sum, plus };
+        //     }
+        // });
+        // // <button-counter>
+        // app.component('button-counter',
+        //     {
+        //         template: `<button @click="plus">You clicked me {{ count }} times.</button>`,
+        //         setup(props, { emit }
+        //         ) {
+        //             const count = ref(0);
+        //             // 透過 emit 傳遞自定義事件
+        //             const plus = () => {
+        //                 count.value++
+        //                 emit('add-sum');
+        //             };
+        //             // 觀察 sum 的變化，若 sum 為 0 代表要 reset count 的內容
+        //             watch(sum, v => count.value = v === 0 ? 0 : count.value);
+        //             // 將模板用到的 count, plus 回傳出去
+        //             return {
+        //                 count,
+        //                 plus
+        //             }
+        //         }
+        //     });
+        // // <button-reset>
+        // app.component('button-reset',
+        //     {
+        //         template: `<button @click="reset">reset</button>`,
+        //         setup() {
+        //             // 將模板用到的 reset 回傳出去
+        //             return { reset }
+        //         }
+        //     });
     </script>
 </body>
 
