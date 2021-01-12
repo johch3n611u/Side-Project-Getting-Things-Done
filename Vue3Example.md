@@ -4,6 +4,7 @@
 
 * <https://v3.cn.vuejs.org/>
 * <https://book.vue.tw/>
+* 要注意属性名不區分大小寫， 驼峰 轉 kebab-cased 原因是 瀏覽器會自動大寫轉小寫再進行辨讀
 
 ```html
 <!--
@@ -68,7 +69,7 @@ const ComponentB = {
 }
 ```
 
-## ⭐⭐⭐ Props in, Event out ⭐⭐⭐ 单向数据流
+## ⭐⭐⭐ Props in, Event out 单向数据流 / Vue3 v-model 雙向綁定 ⭐⭐⭐
 
 * <https://book.vue.tw/CH2/2-2-communications.html>
 
@@ -158,6 +159,28 @@ app.component('my-component', {
 
 app.mount('#app');
 ```
+
+* v-model
+
+```java
+<input v-model="searchText" />
+// 等於
+<input :value="searchText" @input="searchText = $event.target.value" />
+```
+
+## ⭐⭐⭐ is 動態元件 / slot 插槽 ⭐⭐⭐
+
+* <https://book.vue.tw/CH2/2-3-async-dynamic-components.html>
+* v-is 情境 table 內需要出現不是 th tr td 的 tag
+* <https://book.vue.tw/CH2/2-4-slots.html>
+
+## ⭐⭐⭐  Provide / Inject => 類似 Angular 的 Service 可能需要這種功能時就要考慮導入 AG ⭐⭐⭐
+
+* 注入的資料不可變，但可以藉由，注入點用 Computed 包裝，成為連動資料
+
+## ⭐ 声明响应式状态 => 類似 Rxjs 觀察者實例
+
+* <https://v3.cn.vuejs.org/guide/reactivity.html>
 
 ## ⭐⭐⭐ Composition API ⭐⭐⭐
 
