@@ -116,9 +116,13 @@
 
 ## 框架研究
 
-* Vue3 <https://book.vue.tw/>
+* Vue3 <https://github.com/johch3n611u/Side-Project-Getting-Things-Done/blob/main/Vue3Example.md>
 * Firebase <https://github.com/johch3n611u/Side-Project-Firebase-to-WebDatabase/blob/main/README.md>
 
+## 步驟
+
+1. ES6: import module from URL => download & import ...
+2. <https://stackoverflow.com/questions/44877904/how-do-you-import-a-javascript-package-from-a-cdn-script-tag-in-react>
 ## 參考
 
 <https://www.managertoday.com.tw/articles/view/55903>
