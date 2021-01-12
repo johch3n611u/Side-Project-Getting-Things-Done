@@ -1,11 +1,9 @@
 # Vue3Example
 
-### 參考-1
+## ⭐⭐⭐ 組件範例 ⭐⭐⭐
 
 * <https://v3.cn.vuejs.org/>
 * <https://book.vue.tw/>
-
-## ⭐⭐⭐ 組件範例 ⭐⭐⭐
 
 ```html
 <!--
@@ -53,7 +51,7 @@
 
 ## ⭐⭐⭐ 局部註冊 ⭐⭐⭐
 
-<https://v3.cn.vuejs.org/guide/component-registration.html#%E5%B1%80%E9%83%A8%E6%B3%A8%E5%86%8C>
+* <https://v3.cn.vuejs.org/guide/component-registration.html#%E5%B1%80%E9%83%A8%E6%B3%A8%E5%86%8C>
 
 ```js
 const ComponentA = {
@@ -72,7 +70,7 @@ const ComponentB = {
 
 ## ⭐⭐⭐ Props in, Event out ⭐⭐⭐ 单向数据流
 
-<https://book.vue.tw/CH2/2-2-communications.html>
+* <https://book.vue.tw/CH2/2-2-communications.html>
 
 ```html
   <div id="app">
@@ -161,14 +159,10 @@ app.component('my-component', {
 app.mount('#app');
 ```
 
----
-
-### 參考-2
+## ⭐⭐⭐ Composition API ⭐⭐⭐
 
 * [Vue Composition API EasonLin 上](https://uu9924079.medium.com/vue-composition-api-%E7%AD%86%E8%A8%98-%E4%B8%8A-d60eabe3f469)
 * [Vue Composition API EasonLin 下](https://uu9924079.medium.com/vue-composition-api-%E7%AD%86%E8%A8%98-%E4%B8%8B-4f7e25cdd14)
-
-## ⭐⭐⭐ Composition API ⭐⭐⭐
 
 * Composition API 只是 Vue3 中另一種編寫組件的方法，其好處如下：
   * 提供更好的 TypeScript 支持
