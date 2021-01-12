@@ -192,12 +192,12 @@ app.mount('#app');
   * 組件太大，需要依功能分類時可使用
   * 需要跨組件使用程式碼或狀態
 
-### Vue3 API Example
-
-* <https://book.vue.tw/CH2/2-2-communications.html#vue-composition-api>
-* <https://jsfiddle.net/kurotanshi/8hsc2yjg/>
-
 ### Vue3 Composition API Example
 
 * <https://book.vue.tw/CH2/2-5-transitions.html>
 * <https://jsfiddle.net/kurotanshi/sdmkh7qa/>
+
+### Vue3 API Example
+
+* <https://book.vue.tw/CH2/2-2-communications.html#vue-composition-api>
+* <https://jsfiddle.net/kurotanshi/8hsc2yjg/>
