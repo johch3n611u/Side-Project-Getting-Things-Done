@@ -9,10 +9,11 @@
 
 <body>
 
-    <script src="https://unpkg.com/vue@next">
-        // 開發版本，如發布產品建議改為引入 prod 版本：參考 ：https://book.vue.tw/
+    <script src="https://unpkg.com/vue@next"></script>
+    <script type="module" src="/assets/config/firebase/Environment.js"></script>
+    <script>
+        var db = FireBaseBuilder()();
     </script>
-
 </body>
 
 </html>
