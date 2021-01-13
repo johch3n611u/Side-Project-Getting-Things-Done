@@ -5,3 +5,7 @@ document.write('<script type="text/javascript" src="https://www.gstatic.com/fire
 document.write('<script type="text/javascript" src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>');
 document.write('<script type="text/javascript" src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>');
 document.write('<script type="text/javascript" src="../assets/config/firebase/Environment.js"></script>');
+console.clear();
+var message = "Firebase 8.2.1 already init...";
+var color = "red";
+console.log("%c "+message ,  "color: "+color);

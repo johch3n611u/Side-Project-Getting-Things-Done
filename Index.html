@@ -9,8 +9,76 @@
 
 <body>
 
+    <div id="app">
+        <firebase-signin></firebase-signin>
+    </div>
+
+    <script type='text/x-template' id='firebase-signin'>
+        <div style="position: absolute;top: 35%; left: 40%;" id="Login">
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Login</h2>
+                        </td>
+                        <td><button id="Send" style="margin-left: 1%;" type="button">Send</button></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Email">Email</label></td>
+                        <td><input type="email" id="Email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Password">Password</label></td>
+                        <td><input @sign-in="signin" type="password" id="Password"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </script>
+
+    <!-- <script src="/assets/config/firebasebundle.js"></script> -->
     <script src="https://unpkg.com/vue@next"></script>
-    <script src="/assets/config/firebasebundle.js"></script>
+    <script>
+        const {
+            ref,
+            watch,
+            createApp
+        } = Vue;
+
+        const app = createApp({
+            setup() {
+                return {
+                };
+            }
+        });
+
+        app.component('firebase-signin', {
+            template: '#firebase-signin',
+            setup(props, { emit }) {
+                console.log('props', props);
+                console.log('emit', emit);
+                function signin(event) {
+                    console.log('event', event);
+                    // if (event.keyCode == 13 || event.type == "click") {
+                    //     let email = $("#Email").val();
+                    //     console.log(email);
+                    //     let password = $("#Password").val();
+                    //     console.log(password);
+                    //     firebase.auth().signInWithEmailAndPassword(email, password)
+                    // }
+                    emit('sign-in');
+                }
+
+                return {
+                    signin
+                }
+            }
+
+
+        });
+
+        app.mount('#app');
+    </script>
 
 </body>
 

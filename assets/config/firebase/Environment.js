@@ -1,7 +1,3 @@
-import firebase from '../firebase/firebase-app';
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 function FireBaseBuilder() {
 
     var firebaseConfig = {
@@ -14,7 +10,6 @@ function FireBaseBuilder() {
         measurementId: "G-XS9L7WPC9W"
     };
 
-    // Initialize Firebase
     function InitializeDB() {
         firebase.initializeApp(firebaseConfig);
         firebase.analytics();
@@ -24,26 +19,3 @@ function FireBaseBuilder() {
 
     return InitializeDB
 }
-
-export default {
-    FireBaseBuilder
-}
-
-// 閉包
-// function outer() {
-//    var a = 10;
-
-//    function addNum(b) {
-//        a = a + 1;
-//        return a + b;
-//    }
-
-//    function addNum2(b) {
-//        a = a + 1;
-//        return a + b;
-//    }
-//    return addNum;
-// }
-
-// var myFun1 = outer();
-// var myFun2 = outer();
