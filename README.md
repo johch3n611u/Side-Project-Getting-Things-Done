@@ -124,6 +124,7 @@
 1. ES6: import module from URL => download & import ...
 2. <https://stackoverflow.com/questions/44877904/how-do-you-import-a-javascript-package-from-a-cdn-script-tag-in-react>
 3. bundle js <https://github.com/johch3n611u/Side-Project-Getting-Things-Done/blob/main/assets/config/firebasebundle.js>
+4. Login Component
 
 ## 參考
 
