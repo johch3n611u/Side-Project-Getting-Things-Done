@@ -10,7 +10,7 @@
 <body>
 
     <div id="app">
-        <firebase-signin></firebase-signin>
+        <firebase-signin @sign-in='signin'></firebase-signin>
     </div>
 
     <script type='text/x-template' id='firebase-signin'>
@@ -21,55 +21,73 @@
                         <td>
                             <h2>Login</h2>
                         </td>
-                        <td><button id="Send" style="margin-left: 1%;" type="button">Send</button></td>
+                        <td><button id="Send" @click="signin" style="margin-left: 1%;" type="button">Send</button></td>
                     </tr>
                     <tr>
                         <td><label for="Email">Email</label></td>
-                        <td><input type="email" id="Email"></td>
+                        <td><input type="email" id="Email" v-model="email"></td>
                     </tr>
                     <tr>
                         <td><label for="Password">Password</label></td>
-                        <td><input @sign-in="signin" type="password" id="Password"></td>
+                        <td><input @keyup="signin" type="password" id="Password" v-model="password" autocomplete="on"></td>
                     </tr>
                 </table>
             </form>
         </div>
     </script>
 
-    <!-- <script src="/assets/config/firebasebundle.js"></script> -->
+    <script src="/assets/config/firebasebundle.js"></script>
     <script src="https://unpkg.com/vue@next"></script>
     <script>
+        var db = FireBaseBuilder()();
+
         const {
             ref,
             watch,
             createApp
         } = Vue;
 
+        const signin = ref(0);
+
         const app = createApp({
             setup() {
                 return {
+                    signin
                 };
             }
         });
 
         app.component('firebase-signin', {
             template: '#firebase-signin',
-            setup(props, { emit }) {
-                console.log('props', props);
-                console.log('emit', emit);
+            setup(props, {
+                emit
+            }) {
+                // console.log('props', props);
+                // console.log('emit', emit);
+
+                const email = ref();
+                const password = ref();
+
                 function signin(event) {
-                    console.log('event', event);
-                    // if (event.keyCode == 13 || event.type == "click") {
-                    //     let email = $("#Email").val();
-                    //     console.log(email);
-                    //     let password = $("#Password").val();
-                    //     console.log(password);
-                    //     firebase.auth().signInWithEmailAndPassword(email, password)
-                    // }
+                    //console.log('event', event);
+                    if (event.keyCode == 13 || event.type == "click") {
+                        console.log('email', email._value);
+                        console.log('password', password._value);
+                        firebase.auth().signInWithEmailAndPassword(email._value, password._value)
+                            .then(() => {
+                                alert('Success');
+                            })
+                            .catch((error) => {
+                                console.log(error.message);
+                                alert(error.message);
+                            });
+                    }
                     emit('sign-in');
                 }
 
                 return {
+                    email,
+                    password,
                     signin
                 }
             }
