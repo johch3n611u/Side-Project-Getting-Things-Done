@@ -1,8 +1,8 @@
 # Prototype、Wireframe
 
-## 設計系統
+## Design System 設計系統
 
-定義 UI用到的
+定義 UI 用到的
 
 * Color 顏色 ( 色票 / 色卡 )
 * Typography 文字 h1~h5、p 大小 字形
