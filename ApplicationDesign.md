@@ -11,16 +11,16 @@
 * Button 按鈕 特徵
 * ( primary / secondary ) color
 
-### figma 功能 
+## figma 功能 
 
 * <https://figmachina.com/>
 * <https://www.figma.com/file/W0k3y7XqsNUboh1k39srLP/Figma-Basics-(%E4%B8%AD%E6%96%87)?node-id=0%3A286>
 
 * Components
 
-### 付費 vs 免費
+## 付費 vs 免費
 
-* 初级版（Starter）- 免费
+### 初级版（Starter）- 免费
 这是你创建个人帐户时的默认版本，允许你与最多一个其他设计师合作完成项目。
 
 * 无限的文件存储空间
@@ -29,7 +29,7 @@
 * 2 个编辑者
 * 团队样式库
 
-* 教育版（Education）- 免费
+### 教育版（Education）- 免费
 如果你是被认可教育机构的成员，那么你可以免费使用 Figma 专业版的所有功能：
 
 * 无限的文件存储空间
