@@ -112,9 +112,11 @@
 
 去完 wanhon 結案報告完後，發現相較於 API 圖 (也是需要但可能可以藉由 swagger、gRPC、GraphQL)
 
-或是一些 架構流程圖 甚至是開程式講解，都不會比 Prototype、Wireframe 來的直觀
+或是一些 架構流程圖 甚至是開程式講解，都不會比 Prototype、Wireframe 來的直觀，
 
-所以優先看完下篇完成 figma 後，在接續實作 ( 到時出去接也是需要有 figma 與客戶談完後才發包給專業設計師，看起來比較可行 figma 就像設計圖 )
+所以優先看完下篇完成 figma 後，在接續實作。
+
+( 到時出去接也是需要有 figma 與客戶談完後才發包給專業設計師，看起來比較可行 figma 就像設計圖 )
 
 * figma <https://ithelp.ithome.com.tw/users/20112563/ironman/3828>
 
