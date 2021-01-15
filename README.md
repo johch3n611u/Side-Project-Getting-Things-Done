@@ -118,7 +118,7 @@
 
 ( 到時出去接也是需要有 figma 與客戶談完後才發包給專業設計師，看起來比較可行 figma 就像設計圖 )
 
-* figma <https://ithelp.ithome.com.tw/users/20112563/ironman/3828>
+* Figma <https://github.com/johch3n611u/Side-Project-Getting-Things-Done/blob/main/FigmaDesign.md>
 
 ## 架構研擬
 
