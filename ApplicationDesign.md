@@ -11,10 +11,10 @@
 * Button 按鈕 特徵
 * ( primary / secondary ) color
 
-### UI 工具功能 
+### figma 功能 
 
 * <https://figmachina.com/>
 * <https://www.figma.com/file/W0k3y7XqsNUboh1k39srLP/Figma-Basics-(%E4%B8%AD%E6%96%87)?node-id=0%3A286>
 
-* Artboards 畫布
-* Symbol 替換 ( 複用 class 概念 )
+* 
+* 
