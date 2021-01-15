@@ -16,8 +16,13 @@
 * <https://figmachina.com/>
 * <https://www.figma.com/file/W0k3y7XqsNUboh1k39srLP/Figma-Basics-(%E4%B8%AD%E6%96%87)?node-id=0%3A286>
 
-* Components
-* Constraints
+* Components 元件
+* Constraints 約束
+* Smart Selection 智能選擇、排列
+* Auto Layout 自動佈局
+* Collaboration 同步與協作
+* Commenting 註解、評論
+* Share Styles 共享樣式
 
 ## 付費 vs 免費
 
