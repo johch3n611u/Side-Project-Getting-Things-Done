@@ -10,3 +10,5 @@
 * Typography 文字 h1~h5、p 大小 字形
 * Button 按鈕 特徵
 * ( primary / secondary ) color
+
+## Symbol 替換 ( 複用 class 概念 )
