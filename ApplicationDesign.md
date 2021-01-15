@@ -23,9 +23,20 @@
   * 群選元件，畫面中與右下角
 * Auto Layout 自動佈局
   * 類似元件與元件之間的 Constraints 功能
+* Scale
+  * 等比例縮放元件
+* Rules 參考線
+  * Setting > View > ( Rules / Layout Grid ... )
+  * 可以在個別元件內新增
+* Pen tool 鋼筆工具
+  * 支援單/雙手把
+* Mask 遮罩
+  * 被遮(上層)遮罩(下層)群選，右鍵 Use as Mask
 * Collaboration 同步與協作
 * Commenting 註解、評論
 * Share Styles 共享樣式
+
+> [範例 example](https://www.figma.com/file/9wkJBpQzAdw8ECQaKEsflM/12%E5%B1%86%E9%90%B5%E4%BA%BA%E8%B3%BD?node-id=2%3A58)
 
 ## 付費 vs 免費
 
