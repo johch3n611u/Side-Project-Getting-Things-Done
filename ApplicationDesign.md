@@ -2,9 +2,9 @@
 
 ## Design System 設計系統
 
-* [設計系統(Design System)分享]<https://medium.com/uxeastmeetswest/%E8%A8%AD%E8%A8%88%E7%B3%BB%E7%B5%B1-design-system-%E5%88%86%E4%BA%AB-4e9052fa017>
-* <https://figmachina.com/>
-* <https://www.figma.com/file/W0k3y7XqsNUboh1k39srLP/Figma-Basics-(%E4%B8%AD%E6%96%87)?node-id=0%3A286>
+* [設計系統(Design System)分享](https://medium.com/uxeastmeetswest/%E8%A8%AD%E8%A8%88%E7%B3%BB%E7%B5%B1-design-system-%E5%88%86%E4%BA%AB-4e9052fa017)
+* [Figma 中文文档](https://figmachina.com/)
+* [中文範例](https://www.figma.com/file/W0k3y7XqsNUboh1k39srLP/Figma-Basics-(%E4%B8%AD%E6%96%87)?node-id=0%3A286>
 
 定義 UI 用到的
 
