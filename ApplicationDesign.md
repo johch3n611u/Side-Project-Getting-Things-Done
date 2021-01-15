@@ -28,8 +28,10 @@
 * Rules 參考線
   * Setting > View > ( Rules / Layout Grid ... )
   * 可以在個別元件內新增
-* Pen tool 鋼筆工具
+* Pen 鋼筆工具
   * 支援單/雙手把
+* Pencil 鉛筆工具
+  * 跟 AI 一樣畫完就真的是向量
 * Mask 遮罩
   * 被遮 ( 上層 ) 遮罩 ( 下層 ) 群選，右鍵 Use as Mask
 * Inspact CSS 屬性
