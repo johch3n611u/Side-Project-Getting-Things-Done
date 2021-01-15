@@ -31,7 +31,10 @@
 * Pen tool 鋼筆工具
   * 支援單/雙手把
 * Mask 遮罩
-  * 被遮(上層)遮罩(下層)群選，右鍵 Use as Mask
+  * 被遮 ( 上層 ) 遮罩 ( 下層 ) 群選，右鍵 Use as Mask
+* Inspact CSS 屬性
+* Export 輸出切版圖
+  * :triangular_flag_on_post:感覺要小心如果真的跟客戶用這個討論時合約要先簽
 * Collaboration 同步與協作
 * Commenting 註解、評論
 * Share Styles 共享樣式
