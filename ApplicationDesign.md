@@ -15,11 +15,14 @@
 
 ## figma 功能 
 
-* Components 元件
-  * 群組物件後，右鍵 Create Compoent
+* Components 複用元件
+  * 群選物件，右鍵 Create Compoent
 * Constraints 約束
+  * 約束設計元件內的元素於相對位置
 * Smart Selection 智能選擇、排列
+  * 群選元件，畫面中與右下角
 * Auto Layout 自動佈局
+  * 類似元件與元件之間的 Constraints 功能
 * Collaboration 同步與協作
 * Commenting 註解、評論
 * Share Styles 共享樣式
