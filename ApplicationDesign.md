@@ -16,6 +16,7 @@
 ## figma 功能 
 
 * Components 元件
+  群組物件後，右鍵 Create Compoent
 * Constraints 約束
 * Smart Selection 智能選擇、排列
 * Auto Layout 自動佈局
