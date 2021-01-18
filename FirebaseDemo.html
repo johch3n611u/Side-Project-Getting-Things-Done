@@ -62,7 +62,7 @@
     <script>
         // 初始化 Firebase
         var db = FireBaseBuilder()();
-        $("#Send").on("click", function () {
+        $("#Send").on("click", function() {
             SignIn();
         });
 
@@ -91,7 +91,7 @@
         // 確認登入狀態
         function CheckSignedIn() {
             console.log("CheckSignedIn");
-            var user = firebase.auth().currentUser
+            var user = firebase.auth().currentUser;
             console.log(user);
             if (user != null) {
                 // User is signed in.
@@ -105,13 +105,13 @@
         }
 
         // 實時確認登入狀態
-        firebase.auth().onAuthStateChanged(function (user) {
+        firebase.auth().onAuthStateChanged(function(user) {
             if (user) {
                 // User is signed in.
                 $("#Login").attr("style", "display:none");
                 $("#SetData").attr("style", "position: absolute;top: 35%;left: 40%;display:block");
                 // 取得資料渲染
-                db.ref("data").on('value', function (snapshot) {
+                db.ref("data").on('value', function(snapshot) {
                     var data = snapshot.val();
                     console.log(data);
                     $("#RealtimeData").text(JSON.stringify(data));
@@ -124,7 +124,7 @@
         });
 
         // 儲存資料
-        $("#Set").on("click", function () {
+        $("#Set").on("click", function() {
             SetData();
         });
 
@@ -134,22 +134,22 @@
             if (val != "") {
                 var data = JSON.parse(val);
                 db.ref("/data").set(data)
-                    .then(function () {
+                    .then(function() {
                         alert("建立成功");
-                    }).catch(function () {
+                    }).catch(function() {
                         alert("伺服器發生錯誤，請稍後再試");
                     });
             }
         }
 
         //跳出視窗前詢問框(必須有對 window 做動作)
-        window.onbeforeunload = function (event) {
+        window.onbeforeunload = function(event) {
             var event = event || window.event;
             if (event) {
                 event.returnValue = '確定?';
             }
             SetData();
-            firebase.auth().signOut().then(function () {
+            firebase.auth().signOut().then(function() {
                 var user = firebase.auth().currentUser;
                 if (user == null) {
                     alert(確認已登出);

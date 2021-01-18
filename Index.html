@@ -48,6 +48,7 @@
         } = Vue;
 
         const signin = ref(0);
+        const initializeAuth = ref(0);
 
         const app = createApp({
             setup() {
@@ -85,13 +86,21 @@
                     emit('sign-in');
                 }
 
+                const initializeAuth = new Promise(resolve => {
+                    // https://stackoverflow.com/questions/43648240/firebase-auth-and-vue-router
+                    // this adds a hook for the initial auth-change event
+                    firebase.auth().onAuthStateChanged(user => {
+                        console.log(user);
+                    });
+                });
+
                 return {
                     email,
                     password,
-                    signin
+                    signin,
+                    initializeAuth
                 }
             }
-
 
         });
 

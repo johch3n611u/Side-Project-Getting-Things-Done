@@ -174,7 +174,7 @@ app.mount('#app');
 * v-is 情境 table 內需要出現不是 th tr td 的 tag
 * <https://book.vue.tw/CH2/2-4-slots.html>
 
-## ⭐  Provide / Inject => 類似 Angular 的 Service 可能需要這種功能時就要考慮導入 AG ⭐
+## ⭐ Provide / Inject => 類似 Angular 的 Service 可能需要這種功能時就要考慮導入 AG ⭐
 
 * 注入的資料不可變，但可以藉由，注入點用 Computed 包裝，成為連動資料
 
