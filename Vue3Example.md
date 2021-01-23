@@ -5,12 +5,12 @@
 ## Vue2 OptionsAPI
 
 OptionsAPI
-• components
-• props
-• data
-• computed
-• methods
-• lifecycle methods
+* components
+* props
+* data
+* computed
+* methods
+* lifecycle methods
 
 ## 
 
