@@ -2,6 +2,18 @@
 
 <https://github.com/su37josephxia/vue3-study>
 
+## Vue2 OptionsAPI
+
+OptionsAPI
+• components
+• props
+• data
+• computed
+• methods
+• lifecycle methods
+
+## 
+
 # Vue3Example
 
 ## ⭐ 組件範例 ⭐
