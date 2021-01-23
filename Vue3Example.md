@@ -14,7 +14,7 @@ OptionsAPI
 
 ## 
 
-# Vue3Example
+# Vue3 Composition API
 
 ## ⭐ 組件範例 ⭐
 
