@@ -47,7 +47,7 @@ export default {
 }
 ```
 
-# Vue3 Composition API
+# Vue3
 
 ## ⭐ 組件範例 ⭐
 
