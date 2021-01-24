@@ -19,6 +19,10 @@ Options API
 
 解決方法 =>
 
+1. Mixin
+2. Mixin Factory
+3. ScopeSlots
+4. `Composition API`
 
 ## 
 
