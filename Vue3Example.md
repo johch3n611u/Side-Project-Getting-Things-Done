@@ -22,9 +22,30 @@ Options API
 1. Mixin
 2. Mixin Factory
 3. ScopeSlots
-4. `Composition API`
+4. ⭐Composition API⭐
 
-## 
+```js
+// file/other1.js
+export default function other1(parameter){
+   // ... Composition function
+}
+// file/other2.js
+export default function other1({parameter1,parameter2}){
+   // ... Composition function
+}
+// file/Main.js
+import other1 form '@file/other1';
+import other2 form '@file/other2';
+
+export default {
+     set(){
+          const fnOther1 = other1(ABC);
+          const fnOther2 = other2({ABC,CBA})
+     
+          return {fnOther1,fnOther2}
+     }
+}
+```
 
 # Vue3 Composition API
 
