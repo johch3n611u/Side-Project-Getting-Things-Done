@@ -2,15 +2,23 @@
 
 <https://github.com/su37josephxia/vue3-study>
 
-## Vue2 OptionsAPI
+## Vue2 Options API
 
-OptionsAPI
+Options API
+
 * components
 * props
 * data
 * computed
 * methods
 * lifecycle methods
+
+好處 => 功能依照上述六種類別展開，易懂
+
+壞處 => 開發維護時通常以單一功能為主，會在代碼中反覆橫跳，需要收闔才好開發
+
+解決方法 =>
+
 
 ## 
 
