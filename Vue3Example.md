@@ -15,14 +15,14 @@ Options API
 
 好處 => 功能依照上述六種類別展開，易懂
 
-壞處 => 開發維護時通常以單一功能為主，會在代碼中反覆橫跳，需要收闔才好開發
+壞處 => 開發維護時通常以單一功能為主，會在代碼中反覆橫跳，需要收合成單一 fn => function 才好開發
 
 解決方法 =>
 
 1. Mixin
 2. Mixin Factory
 3. ScopeSlots
-4. ⭐Composition API⭐
+4. ⭐Composition API⭐ ( Vue3核心功能 )
 
 ```js
 // file/other1.js
