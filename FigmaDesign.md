@@ -20,7 +20,7 @@
 
 * Components 複用元件
   * 群選物件，右鍵 Create Compoent
-  * `#f03c15`模組化後對於開發與維護更改上更易讀，也更容易調整
+  * [#f03c15](https://placehold.it/15/f03c15/000000?text=+)模組化後對於開發與維護更改上更易讀，也更容易調整
 * Constraints 約束
   * 約束設計元件內的元素於相對位置
 * Smart Selection 智能選擇、排列
