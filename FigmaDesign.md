@@ -9,7 +9,7 @@
 
 * [設計系統(Design System)分享](https://medium.com/uxeastmeetswest/%E8%A8%AD%E8%A8%88%E7%B3%BB%E7%B5%B1-design-system-%E5%88%86%E4%BA%AB-4e9052fa017)
 
-定義 UI 用到的
+定義 UI 用到的元件，方便模組化複用
 
 * Color 顏色 ( 色票 / 色卡 )
 * Typography 文字 h1~h5、p 大小 字形
@@ -20,6 +20,7 @@
 
 * Components 複用元件
   * 群選物件，右鍵 Create Compoent
+  * `#f03c15`模組化後對於開發與維護更改上更易讀，也更容易調整
 * Constraints 約束
   * 約束設計元件內的元素於相對位置
 * Smart Selection 智能選擇、排列
