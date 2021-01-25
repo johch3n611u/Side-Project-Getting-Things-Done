@@ -16,6 +16,10 @@
 * Button 按鈕 特徵
 * ( primary / secondary ) color
 
+## PM/UIUX
+
+* [PM/UIUX 要先知道的事](https://ithelp.ithome.com.tw/m/users/20112529/ironman/2059)
+
 ## figma 功能 
 
 ### 基礎
