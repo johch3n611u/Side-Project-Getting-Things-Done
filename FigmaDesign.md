@@ -18,12 +18,12 @@
 
 ## figma 功能 
 
-基礎
+### 基礎
 
 * Lock 鎖住圖層
 * Frame 圖紙 / 畫框
 
-進階
+### 進階
 
 * Components 複用元件
   * 群選物件，右鍵 Create Compoent
@@ -55,7 +55,8 @@
 
 > [範例 example](https://www.figma.com/file/9wkJBpQzAdw8ECQaKEsflM/12%E5%B1%86%E9%90%B5%E4%BA%BA%E8%B3%BD?node-id=2%3A58)
 
-## 付費 vs 免費
+<details>
+ <summary>付費 vs 免費</summary>
 
 ### 初级版（Starter）- 免费
 这是你创建个人帐户时的默认版本，允许你与最多一个其他设计师合作完成项目。
@@ -77,3 +78,5 @@
 * 团队组件库
 * Slack 集成（评论通知）
 * 私人项目（团队内可以创建私人项目，只有通过邀请才能加入）
+
+</details>
