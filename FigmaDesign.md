@@ -64,6 +64,17 @@
 
 > [範例 example](https://www.figma.com/file/9wkJBpQzAdw8ECQaKEsflM/12%E5%B1%86%E9%90%B5%E4%BA%BA%E8%B3%BD?node-id=2%3A58)
 
+### 高階
+
+* Prototype 動畫
+  * 右邊切到 Prototype，即可設定過場或交換或疊加等動畫
+
+<https://figmachina.com/guide/prototyping/creating-prototypes.html>
+
+* 輪播
+
+<https://figmachina.com/guide/prototyping/advanced-prototyping-with-scrolling-overflow.html>
+
 <details>
  <summary>付費 vs 免費</summary>
 
