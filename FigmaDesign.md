@@ -22,6 +22,7 @@
 
 * Lock 鎖住圖層
   * 左邊鎖頭圖示
+  * 可以將仿製圖複製近來鎖住後用鋼筆模仿
 * Frame 圖紙 / 畫框
   * 左上角選項 `#` 字圖示
 
@@ -29,19 +30,21 @@
 
 * Components 複用元件
   * 群選物件，右鍵 Create Compoent
-  * :triangular_flag_on_post:模組化後對於開發與維護更改上更易讀，也更容易調整
+  * 模組化後對於開發與維護更改上更易讀，也更容易調整
 * Constraints 約束
-  * 群選物件，右邊
+  * 點擊元件進入內層後，右邊 Constraints 即可調整
   * 約束設計元件內的元素於相對位置 e.g. butten 與 innerText
 * Smart Selection 智能選擇、排列
-  * 群選元件，畫面中與右下角
+  * 群選元件，群選元件中粉紅色符號與右下角九個點符號
 * Auto Layout 自動佈局
+  * 群選多元件時，右鍵 Add auto layout
   * 類似元件與元件之間的 Constraints 功能
 * Scale
+  * 左上角箭頭符號內
   * 等比例縮放元件
 * Rules 參考線
   * Setting > View > ( Rules / Layout Grid ... )
-  * 可以在個別元件內新增
+  * :triangular_flag_on_post:除了整個 frame ，也可以在個別元件內新增
 * Pen 鋼筆工具
   * 支援單/雙手把
 * Pencil 鉛筆工具
