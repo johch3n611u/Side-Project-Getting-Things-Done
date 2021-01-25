@@ -18,11 +18,19 @@
 
 ## figma 功能 
 
+基礎
+
+* Lock 鎖住圖層
+* Frame 圖紙 / 畫框
+
+進階
+
 * Components 複用元件
   * 群選物件，右鍵 Create Compoent
-  * [#f03c15](https://placehold.it/15/f03c15/000000?text=+)模組化後對於開發與維護更改上更易讀，也更容易調整
+  * :triangular_flag_on_post:模組化後對於開發與維護更改上更易讀，也更容易調整
 * Constraints 約束
-  * 約束設計元件內的元素於相對位置
+  * 群選物件，右邊
+  * 約束設計元件內的元素於相對位置 e.g. butten 與 innerText
 * Smart Selection 智能選擇、排列
   * 群選元件，畫面中與右下角
 * Auto Layout 自動佈局
