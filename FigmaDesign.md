@@ -5,7 +5,14 @@
 * [Figma 中文文档](https://figmachina.com/)
 * [中文範例](https://www.figma.com/file/W0k3y7XqsNUboh1k39srLP/Figma-Basics-(%E4%B8%AD%E6%96%87)?node-id=0%3A286)
 
-## Design System 設計系統
+## 流程
+
+* <https://ithelp.ithome.com.tw/m/articles/10203866?sc=iThelpR>
+* <https://alphaorange.medium.com/ux-ui-%E5%B7%A5%E4%BD%9C%E8%81%B7%E8%B2%AC%E5%8D%80%E5%88%86-5594e6607851>
+
+
+
+## Design System 設計系統 => 方便 CIS 與 元件化
 
 * [設計系統(Design System)分享](https://medium.com/uxeastmeetswest/%E8%A8%AD%E8%A8%88%E7%B3%BB%E7%B5%B1-design-system-%E5%88%86%E4%BA%AB-4e9052fa017)
 
