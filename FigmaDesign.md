@@ -82,6 +82,7 @@
 <https://figmachina.com/guide/prototyping/creating-prototypes.html>
 
 * 輪播
+  * 當 img 超過 frame 後 Prototype 可設定 Overflow 所需的模式，即可達成溢出滑動功能。
 
 <https://figmachina.com/guide/prototyping/advanced-prototyping-with-scrolling-overflow.html>
 
