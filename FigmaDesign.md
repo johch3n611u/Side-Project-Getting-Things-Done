@@ -89,7 +89,7 @@
 * 動畫
 
   * [製作動畫的幾種方式](https://kknews.cc/zh-tw/design/95kkp5j.html)
-    * 素材網站找 ( 不改直接套 e.g. 素材網 figma 有開源社群 / 遊戲引擎 GTA etc... ) 
+    * 素材網站找 ( 不改直接套 e.g. 素材網、figma community / 遊戲引擎 GTA etc... ) 
     * 找素材來改 ( AI / PS )
     * 自己建模出圖 ( sketchup / 3dmax => lumion / ae )
   * [搜尋 FIGMA 動畫](https://www.google.com/search?q=figma+%E5%8B%95%E7%95%AB&rlz=1C1CHBF_zh-TWTW905TW905&oq=figma+%E5%8B%95%E7%95%AB&aqs=chrome..69i57.5662j0j7&sourceid=chrome&ie=UTF-8)
