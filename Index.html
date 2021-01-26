@@ -19,7 +19,7 @@
                 <table>
                     <tr>
                         <td>
-                            <h2>Login</h2>
+                            <h2>Sign in</h2>
                         </td>
                         <td><button id="Send" @click="signin" style="margin-left: 1%;" type="button">Send</button></td>
                     </tr>
@@ -39,7 +39,7 @@
     <script src="/assets/config/firebasebundle.js"></script>
     <script src="https://unpkg.com/vue@next"></script>
     <script>
-        var db = FireBaseBuilder()();
+        const db = FireBaseBuilder()();
 
         const {
             ref,
@@ -48,7 +48,6 @@
         } = Vue;
 
         const signin = ref(0);
-        const initializeAuth = ref(0);
 
         const app = createApp({
             setup() {
