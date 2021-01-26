@@ -78,16 +78,11 @@
 
 * Prototype 動畫
   * 右邊切到 Prototype，即可設定過場或交換或疊加等動畫
-
-<https://figmachina.com/guide/prototyping/creating-prototypes.html>
-
+  * [範例](https://figmachina.com/guide/prototyping/creating-prototypes.html)
 * 輪播
   * 當 img 超過 frame 後 Prototype 可設定 Overflow 所需的模式，即可達成溢出滑動功能。
-
-<https://figmachina.com/guide/prototyping/advanced-prototyping-with-scrolling-overflow.html>
-
+  * [範例](https://figmachina.com/guide/prototyping/advanced-prototyping-with-scrolling-overflow.html)
 * 動畫
-
   * [製作動畫的幾種方式](https://kknews.cc/zh-tw/design/95kkp5j.html)
     * 素材網站找 ( 不改直接套 e.g. 素材網、figma community / 遊戲引擎 GTA etc... ) 
     * 找素材來改 ( AI / PS )
