@@ -5,12 +5,19 @@
 * [Figma 中文文档](https://figmachina.com/)
 * [中文範例](https://www.figma.com/file/W0k3y7XqsNUboh1k39srLP/Figma-Basics-(%E4%B8%AD%E6%96%87)?node-id=0%3A286)
 
-## 流程
+## PM/UIUX
+
+* [PM/UIUX 要先知道的事](https://ithelp.ithome.com.tw/m/users/20112529/ironman/2059)
+
+### 流程
 
 * <https://ithelp.ithome.com.tw/m/articles/10203866?sc=iThelpR>
 * <https://alphaorange.medium.com/ux-ui-%E5%B7%A5%E4%BD%9C%E8%81%B7%E8%B2%AC%E5%8D%80%E5%88%86-5594e6607851>
 
 ![alt](/assets/img/1_fKy0S_xqMWOrbvreWDNpAw.png)
+
+* Functional Map => 功能規格 頁面內的 UI 流程圖
+* Flow Chart => 互動設計 SiteMap 架構圖
 
 ## Design System 設計系統 => 方便 CIS 與 元件化
 
@@ -22,10 +29,6 @@
 * Typography 文字 h1~h5、p 大小 字形
 * Button 按鈕 特徵
 * ( primary / secondary ) color
-
-## PM/UIUX
-
-* [PM/UIUX 要先知道的事](https://ithelp.ithome.com.tw/m/users/20112529/ironman/2059)
 
 ## figma 功能
 
