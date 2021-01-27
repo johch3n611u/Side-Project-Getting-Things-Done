@@ -2,6 +2,20 @@
 
 ## 引言
 
+* 2021 年 01 月 27 日
+
+  在研究到 Vue3 準備 figma 再繼續架構時發現 ...
+  
+  原來 Google Keep 非常符合 GTD 的使用方式 ... [GTD 參考](https://vocus.cc/@study_overflow/5dde03c1fd89780001fac9d3)
+  
+  目前就差在 G Keep 似乎在協作上比較不像一般的，看板模式協作，比較偏向個人 GTD，
+  
+  目前依照 MVP 守則，策略改為申辦一共用工作室帳號 解決此問題，同時 Gmail 解決一致對外問題，
+  
+  所以以下匡列此專案如何結尾與學習到哪些東西 ...
+
+* 2020 年 12 月 14 日
+
 先前想依照 [OKR KPI 做的管理工具](https://github.com/johch3n611u/Side-Project-Firebase-to-WebDatabase)，目前看來是失敗了，
 
 看起來還是要利用框架優先想好資料結構才便於存取與渲染，
