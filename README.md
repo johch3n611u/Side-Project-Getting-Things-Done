@@ -13,6 +13,10 @@
   目前依照 MVP 守則，策略改為申辦一共用工作室帳號 解決此問題，同時 Gmail 解決一致對外問題，
   
   所以以下匡列此專案如何結尾與學習到哪些東西 ...
+  
+  1. [Vue3](https://github.com/johch3n611u/Side-Project-Getting-Things-Done/blob/main/Vue3Example.md)
+  2. [firebase](https://github.com/johch3n611u/Side-Project-Getting-Things-Done/blob/main/FirebaseDemo.html)
+  3. [figma](https://github.com/johch3n611u/Side-Project-Getting-Things-Done/blob/main/FigmaDesign.md)
 
 * 2020 年 12 月 14 日
 
