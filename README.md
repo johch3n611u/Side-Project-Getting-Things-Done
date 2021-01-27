@@ -4,7 +4,7 @@
 
 * 2021 年 01 月 27 日
 
-  在研究到 Vue3 準備 figma 再繼續架構時發現 ...
+  在研究到 Vue3 ( 輕前端可能需要進階到 cdn vue router 與 vue vuex ) 且準備 figma 再繼續架構時發現 ...
   
   原來 Google Keep 非常符合 GTD 的使用方式 ... [GTD 參考](https://vocus.cc/@study_overflow/5dde03c1fd89780001fac9d3)
   
