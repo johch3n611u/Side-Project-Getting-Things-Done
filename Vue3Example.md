@@ -39,12 +39,16 @@ Options API
 * Top <a id="top"></a>
   1. [Setup](#Setup)
   1. [Reactive](#Reactive)
-  1. [Methods/Computed](#Methods)
+  1. [Methods / Computed](#Methods)
   1. [LifecycleHooks](#LifecycleHooks)
   1. [Watch](#Watch)
   1. [SharingState](#SharingState)
   1. [Suspense](#Suspense)
   1. [Teleport](#Teleport)
+  1. [Modularizing](#Teleport)
+  1. [Props in, Event out / v-model](#Teleport)
+  1. [is / slot](#Teleport)
+  1. [Provide / Inject](#Teleport)
 
 ### Setup 類似 C# 建構子 <a id="Setup" href="#top">BackTop</a>
 
@@ -80,10 +84,18 @@ setup (props,context) {
 }
 ```
 
+### ⭐ Reactive 声明响应式状态 => 類似 Rxjs 觀察者實例
+
+* <https://v3.cn.vuejs.org/guide/reactivity.html>
+
 ### Vue3 Composition API Example
 
 * <https://book.vue.tw/CH2/2-5-transitions.html>
 * <https://jsfiddle.net/kurotanshi/sdmkh7qa/>
+
+---
+
+* <https://github.com/su37josephxia/vue3-study>
 
 ### Vue3 API Example
 
@@ -292,7 +304,3 @@ app.mount('#app');
 ### ⭐ Provide / Inject => 類似 Angular 的 Service 可能需要這種功能時就要考慮導入 AG ⭐
 
 * 注入的資料不可變，但可以藉由，注入點用 Computed 包裝，成為連動資料
-
-### ⭐ 声明响应式状态 => 類似 Rxjs 觀察者實例
-
-* <https://v3.cn.vuejs.org/guide/reactivity.html>
