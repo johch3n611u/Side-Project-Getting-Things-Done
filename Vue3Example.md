@@ -80,7 +80,7 @@ setup (props,context) {
 * <https://book.vue.tw/CH2/2-2-communications.html#vue-composition-api>
 * <https://jsfiddle.net/kurotanshi/8hsc2yjg/>
 
-## 舊東西
+## 舊東西 ( 延續 Vue2 )
 
 ### ⭐ 組件範例 ⭐
 
