@@ -1,5 +1,9 @@
 # GTD
 
+1. [Vue3](https://github.com/johch3n611u/Side-Project-Getting-Things-Done/blob/main/Vue3Example.md)
+2. [firebase](https://github.com/johch3n611u/Side-Project-Getting-Things-Done/blob/main/FirebaseDemo.html)
+3. [figma](https://github.com/johch3n611u/Side-Project-Getting-Things-Done/blob/main/FigmaDesign.md)
+
 ## 引言
 
 * 2021 年 01 月 27 日
@@ -9,16 +13,6 @@
   原來 Google Keep 非常符合 GTD 的使用方式 ... [GTD 參考](https://vocus.cc/@study_overflow/5dde03c1fd89780001fac9d3)
   
   目前就差在 G Keep 似乎在協作上比較不像一般的，看板模式協作，比較偏向個人 GTD，
-  
-  目前依照 MVP 守則，( 如果能用工具或庫解決的問題，請勿自己造輪子 )
-  
-  策略改為申辦一共用工作室帳號 解決此問題，同時 Gmail 解決一致對外問題，
-  
-  所以以下匡列此專案如何結尾與學習到哪些東西 ...
-  
-  1. [Vue3](https://github.com/johch3n611u/Side-Project-Getting-Things-Done/blob/main/Vue3Example.md)
-  2. [firebase](https://github.com/johch3n611u/Side-Project-Getting-Things-Done/blob/main/FirebaseDemo.html)
-  3. [figma](https://github.com/johch3n611u/Side-Project-Getting-Things-Done/blob/main/FigmaDesign.md)
 
 * 2020 年 12 月 14 日
 
