@@ -37,9 +37,9 @@ Options API
   * 需要跨組件使用程式碼或狀態
 
 * Top
-  1. <a href="#setup">Setup</a>
+  1. [Setup](#setup)
 
-### Setup 類似 C# 建構子 <a if="setup" href="#top">BackTop</a>
+### Setup 類似 C# 建構子 <a id="setup" href="#">BackTop</a>
 
 * 參數1 props - 属性 (响应式对象 且 可以监听(watch))
 
