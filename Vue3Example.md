@@ -37,7 +37,7 @@ Options API
   * 需要跨組件使用程式碼或狀態
 
 * Top
-  1. [Setup](#setup)
+  1. <a href="setup">Setup</a>
 
 ### Setup 類似 C# 建構子 <a if="setup" href="#top">BackTop</a>
 
