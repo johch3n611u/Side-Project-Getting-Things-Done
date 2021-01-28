@@ -18,7 +18,9 @@
   
   所以 MVP 模式也必須考量擴充，應該是趕快快速開發符合最簡需求的工具，
   
-  而了解了 [架站相關資訊](https://daotw.com/%E5%A6%82%E4%BD%95%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99/#top) 後，確定 .NET CORE API + heroku 要，但目前這個 vue + firebase 優先開發 mvp ，後續有機會在連動 angular 之類的。
+  而了解了 [架站相關資訊](https://daotw.com/%E5%A6%82%E4%BD%95%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99/#top) 後，確定 .NET CORE API + heroku 要，
+  
+  但目前這個 vue + firebase 優先開發 mvp ，後續有機會在連動 angular 之類的。
 
 * 2020 年 12 月 14 日
 
