@@ -36,10 +36,17 @@ Options API
   * 組件太大，需要依功能分類時可使用
   * 需要跨組件使用程式碼或狀態
 
-* Top
-  1. [Setup](#setup)
+* Top <a id="top"></a>
+  1. [Setup](#Setup)
+  1. [Reactive](#Reactive)
+  1. [Methods/Computed](#Methods)
+  1. [LifecycleHooks](#LifecycleHooks)
+  1. [Watch](#Watch)
+  1. [SharingState](#SharingState)
+  1. [Suspense](#Suspense)
+  1. [Teleport](#Teleport)
 
-### Setup 類似 C# 建構子 <a id="setup" href="#">BackTop</a>
+### Setup 類似 C# 建構子 <a id="Setup" href="#top">BackTop</a>
 
 * 參數1 props - 属性 (响应式对象 且 可以监听(watch))
 
