@@ -36,7 +36,10 @@ Options API
   * 組件太大，需要依功能分類時可使用
   * 需要跨組件使用程式碼或狀態
 
-### Setup 類似 C# 建構子
+* Top
+  1. [Setup](#setup)
+
+### Setup 類似 C# 建構子 <a if="setup" href="#top">BackTop</a>
 
 * 參數1 props - 属性 (响应式对象 且 可以监听(watch))
 
