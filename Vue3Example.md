@@ -82,16 +82,16 @@ Options API
 * Top <a id="top"></a>
   1. [Setup](#Setup)
   1. [Reactive](#Reactive)
-  1. [Modularizing](#Teleport)
+  1. [Modularizing](#Modularizing)
   1. [Methods / Computed](#Methods)
   1. [LifecycleHooks](#LifecycleHooks)
   1. [Watch](#Watch)
   1. [SharingState](#SharingState)
   1. [Suspense](#Suspense)
   1. [Teleport](#Teleport)
-  1. [Props in, Event out / v-model](#Teleport)
-  1. [is / slot](#Teleport)
-  1. [Provide / Inject](#Teleport)
+  1. [Props in, Event out / v-model](#Props)
+  1. [is / slot](#is)
+  1. [Provide / Inject](#Provide)
 
 ### Setup 類似 C# 建構子 <a id="Setup" href="#top">BackTop</a>
 
