@@ -24,6 +24,8 @@ Options API
 3. ~~ScopeSlots~~
 4. ⭐Composition API⭐ ( Vue3核心功能 )
 
+<br><br><br><br><br><br><br><br><br><br>
+
 ## 新東西
 
 ### ⭐ Composition API ⭐
@@ -154,6 +156,8 @@ export default {
 
 * <https://book.vue.tw/CH2/2-2-communications.html#vue-composition-api>
 * <https://jsfiddle.net/kurotanshi/8hsc2yjg/>
+
+<br><br><br><br><br><br><br><br><br><br>
 
 ## 舊東西 ( 延續 Vue2 )
 
