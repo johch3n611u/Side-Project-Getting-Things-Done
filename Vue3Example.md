@@ -13,6 +13,8 @@ Options API
 * methods
 * lifecycle methods
 
+<details><summary>Vue2 Demo</summary>
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -51,6 +53,8 @@ Options API
 
 </html>
 ```
+
+</details>
 
 好處 => 功能依照上述六種類別展開，易懂
 
