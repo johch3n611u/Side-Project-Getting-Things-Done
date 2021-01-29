@@ -24,8 +24,8 @@
   
   > studio 架構 => 能串 API 就串，能用函式庫就用，但必須一體且可以整合
   
-  * CMS
   * GTD
+  * CMS
   * Calendar
   * CRM
 
