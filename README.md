@@ -21,6 +21,13 @@
   而[了解](https://blog.back4app.com/heroku-alternatives-in-2021/)了 [架站相關資訊](https://daotw.com/%E5%A6%82%E4%BD%95%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99/#top) 後，確定 .NET CORE API + heroku 要，
   
   但目前這個 vue + firebase 優先開發 mvp ，後續有機會在連動 angular 之類的。
+  
+  > studio 架構 => 能串 API 就串，能用函式庫就用，但必須一體且可以整合
+  
+  * CMS
+  * GTD
+  * Calendar
+  * CRM
 
 * 2020 年 12 月 14 日
 
