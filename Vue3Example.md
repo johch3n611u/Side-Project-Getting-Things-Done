@@ -28,13 +28,11 @@ Options API
 
 ### ⭐ Composition API ⭐
 
-* [Vue Composition API EasonLin 上](https://uu9924079.medium.com/vue-composition-api-%E7%AD%86%E8%A8%98-%E4%B8%8A-d60eabe3f469)
-* [Vue Composition API EasonLin 下](https://uu9924079.medium.com/vue-composition-api-%E7%AD%86%E8%A8%98-%E4%B8%8B-4f7e25cdd14)
-
+* Vue Composition API EasonLin [上](https://uu9924079.medium.com/vue-composition-api-%E7%AD%86%E8%A8%98-%E4%B8%8A-d60eabe3f469) [下](https://uu9924079.medium.com/vue-composition-api-%E7%AD%86%E8%A8%98-%E4%B8%8B-4f7e25cdd14)
 * Composition API 只是 Vue3 中另一種編寫組件的方法，其好處如下：
   * 提供更好的 TypeScript 支持
   * 組件太大，需要依功能分類時可使用
-  * 需要跨組件使用程式碼或狀態
+  * 更好的跨組件使用程式碼或狀態
 
 * Top <a id="top"></a>
   1. [Setup](#Setup)
