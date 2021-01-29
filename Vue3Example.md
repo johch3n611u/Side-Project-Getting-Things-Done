@@ -86,9 +86,6 @@ setup (props,context) {
 ### ⭐ Reactive 声明响应式状态 => 類似 Rxjs 觀察者實例
 
 * <https://v3.cn.vuejs.org/guide/reactivity.html>
-
-
-
 * Demo <https://github.com/su37josephxia/vue3-study/tree/master/demo/reactivity-demo>
 
 ### ⭐ Modularizing ⭐
@@ -103,8 +100,7 @@ setup (props,context) {
 </div>
 ```
 
-* ⭐ 局部註冊 ⭐
-* <https://v3.cn.vuejs.org/guide/component-registration.html#%E5%B1%80%E9%83%A8%E6%B3%A8%E5%86%8C>
+* [局部註冊](https://v3.cn.vuejs.org/guide/component-registration.html#%E5%B1%80%E9%83%A8%E6%B3%A8%E5%86%8C)
 
 ```js
 const ComponentA = {
@@ -121,7 +117,7 @@ const ComponentB = {
 }
 ```
  
-* ⭐ 引入外部資源 ⭐
+* [引入外部資源]()
 
 ```js
 // file/other1.js
