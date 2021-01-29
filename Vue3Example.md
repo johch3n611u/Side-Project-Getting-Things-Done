@@ -160,9 +160,15 @@ const ComponentB = {
     }
 ...
 }
+const app = Vue.createApp({
+  components: {
+    'component-a': ComponentA,
+    'component-b': ComponentB
+  }
+})
 ```
  
-* [引入外部資源]()
+* [引入外部資源](https://github.com/su37josephxia/vue3-study/tree/master/vue-mastery/composition-api#34-compositionapi---%E5%A4%8D%E5%90%88api)
 
 ```js
 // file/other1.js
