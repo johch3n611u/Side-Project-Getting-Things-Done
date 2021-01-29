@@ -1,6 +1,5 @@
 * 2021-01-23 在 github 搜到一個整理得蠻好的 Vue3 專案
-
-<https://github.com/su37josephxia/vue3-study>
+  <https://github.com/su37josephxia/vue3-study>
 
 ## Vue2 Options API
 
@@ -88,27 +87,41 @@ setup (props,context) {
 
 * <https://v3.cn.vuejs.org/guide/reactivity.html>
 
-### Vue3 Composition API Example
 
-* <https://book.vue.tw/CH2/2-5-transitions.html>
-* <https://jsfiddle.net/kurotanshi/sdmkh7qa/>
 
----
+* Demo <https://github.com/su37josephxia/vue3-study/tree/master/demo/reactivity-demo>
 
-* <https://github.com/su37josephxia/vue3-study>
+### ⭐ Modularizing ⭐
 
-### Vue3 API Example
+```html
+<div id="app">
+     <app-nav></app-nav>
+     <app-view>
+            <app-sidebar></app-sidebar>
+            <app-content></app-content>
+    </app-view>
+</div>
+```
 
-* <https://book.vue.tw/CH2/2-2-communications.html#vue-composition-api>
-* <https://jsfiddle.net/kurotanshi/8hsc2yjg/>
+* ⭐ 局部註冊 ⭐
+* <https://v3.cn.vuejs.org/guide/component-registration.html#%E5%B1%80%E9%83%A8%E6%B3%A8%E5%86%8C>
 
-## 舊東西 ( 延續 Vue2 )
-
-### ⭐ 組件範例 ⭐
-
-* <https://v3.cn.vuejs.org/>
-* <https://book.vue.tw/>
-* 要注意属性名不區分大小寫， 驼峰 轉 kebab-cased 原因是 瀏覽器會自動大寫轉小寫再進行辨讀
+```js
+const ComponentA = {
+    components: {
+        'component-a': ComponentA,
+        'component-b': ComponentB
+    }
+}
+const ComponentB = {
+    components: {
+        'component-a': ComponentA
+    }
+...
+}
+```
+ 
+* ⭐ 引入外部資源 ⭐
 
 ```js
 // file/other1.js
@@ -133,68 +146,25 @@ export default {
 }
 ```
 
-```html
-<!--
-<div id="app">
-     <app-nav></app-nav>
-     <app-view>
-            <app-sidebar></app-sidebar>
-            <app-content></app-content>
-    </app-view>
-</div>
--->
+### Vue3 Composition API Example
 
-<div id="app">
-        <h1>{{msg}}</h1>
-        <button @click="addExclamationMark()">Add !</button>
-</div>
-```
+* <https://book.vue.tw/CH2/2-5-transitions.html>
+* <https://jsfiddle.net/kurotanshi/sdmkh7qa/>
 
-```js
-// cdn 引入
-<script src="https://unpkg.com/vue@next"></script>
-// 開發版本，如發布產品建議改為引入 prod 版本
-<script>
-        const {
-            ref
-        } = Vue;
+---
 
-        const App = {
-            setup() {
-                const msg = ref("Hello Vue 3");
+* <https://github.com/su37josephxia/vue3-study>
 
-                function addExclamationMark() {
-                    msg.value += "!";
-                }
-                return {
-                    msg,
-                    addExclamationMark,
-                };
-            },
-        };
+### Vue3 API Example
 
-        Vue.createApp(App).mount("#app");
-</script>
-```
+* <https://book.vue.tw/CH2/2-2-communications.html#vue-composition-api>
+* <https://jsfiddle.net/kurotanshi/8hsc2yjg/>
 
-### ⭐ 局部註冊 ⭐
+## 舊東西 ( 延續 Vue2 )
 
-* <https://v3.cn.vuejs.org/guide/component-registration.html#%E5%B1%80%E9%83%A8%E6%B3%A8%E5%86%8C>
-
-```js
-const ComponentA = {
-    components: {
-        'component-a': ComponentA,
-        'component-b': ComponentB
-    }
-}
-const ComponentB = {
-    components: {
-        'component-a': ComponentA
-    }
-...
-}
-```
+* <https://v3.cn.vuejs.org/>
+* <https://book.vue.tw/>
+* 要注意属性名不區分大小寫， 驼峰 轉 kebab-cased 原因是 瀏覽器會自動大寫轉小寫再進行辨讀
 
 ### ⭐ Props in, Event out 单向数据流 / Vue3 v-model 雙向綁定 ⭐
 
