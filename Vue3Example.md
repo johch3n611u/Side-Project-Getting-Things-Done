@@ -131,7 +131,9 @@ setup (props,context) {
 ### ⭐ Reactive 声明响应式状态 => 類似 Rxjs 觀察者實例
 
 * <https://v3.cn.vuejs.org/guide/reactivity.html>
-* Demo <https://github.com/su37josephxia/vue3-study/tree/master/demo/reactivity-demo>
+* 原理 Demo <https://github.com/su37josephxia/vue3-study/tree/master/demo/reactivity-demo>
+
+
 
 ### ⭐ Modularizing ⭐ <a id="Modularizing"></a>
 
