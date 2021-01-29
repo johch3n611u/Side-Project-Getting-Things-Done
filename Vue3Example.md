@@ -261,7 +261,7 @@ app.mount('#app');
 
 * 注入的資料不可變，但可以藉由，注入點用 Computed 包裝，成為連動資料
 
-### Demo
+### Demo <a id="demo"></a>
 
 * <https://github.com/su37josephxia/vue3-study>
 * Vue3 Composition API Example
@@ -270,7 +270,7 @@ app.mount('#app');
 * Vue3 API Example
   * <https://book.vue.tw/CH2/2-2-communications.html#vue-composition-api>
   * <https://jsfiddle.net/kurotanshi/8hsc2yjg/>
-* baseAPI
+* [baseAPI](https://github.com/su37josephxia/vue3-study/blob/master/demo/api/base-api.html)
 
 ```html
 <!DOCTYPE html>
