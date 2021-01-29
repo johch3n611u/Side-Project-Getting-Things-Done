@@ -186,12 +186,19 @@ import other1 form '@file/other1';
 import other2 form '@file/other2';
 
 export default {
+     // 直接使用
      set(){
           const fnOther1 = other1(ABC);
           const fnOther2 = other2({ABC,CBA})
      
           return {fnOther1,fnOther2}
      }
+     
+     // 類似 AG 模塊化 Module
+     // components: {
+     //    other1,
+     //    other2
+     // }
 }
 ```
 
