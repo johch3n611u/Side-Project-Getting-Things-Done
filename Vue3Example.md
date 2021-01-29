@@ -73,7 +73,6 @@ export defalut {
 //      console.log(name) // undefined
 //    })
 //  }
-
 ```
 
 * 參數2 context - 上下文对象 ( 用于代替以前的this方法可以访问的属性 )
@@ -83,6 +82,8 @@ setup (props,context) {
   const {attrs,slots,parent,root,emit} = context
 }
 ```
+
+* [Demo](#demo)
 
 ### ⭐ Reactive 声明响应式状态 => 類似 Rxjs 觀察者實例
 
@@ -142,20 +143,6 @@ export default {
      }
 }
 ```
-
-### Vue3 Composition API Example
-
-* <https://book.vue.tw/CH2/2-5-transitions.html>
-* <https://jsfiddle.net/kurotanshi/sdmkh7qa/>
-
----
-
-* <https://github.com/su37josephxia/vue3-study>
-
-### Vue3 API Example
-
-* <https://book.vue.tw/CH2/2-2-communications.html#vue-composition-api>
-* <https://jsfiddle.net/kurotanshi/8hsc2yjg/>
 
 <br><br><br><br><br><br><br><br><br><br>
 
@@ -273,3 +260,123 @@ app.mount('#app');
 ### ⭐ Provide / Inject => 類似 Angular 的 Service 可能需要這種功能時就要考慮導入 AG ⭐
 
 * 注入的資料不可變，但可以藉由，注入點用 Computed 包裝，成為連動資料
+
+### Demo
+
+* <https://github.com/su37josephxia/vue3-study>
+* Vue3 Composition API Example
+  * <https://book.vue.tw/CH2/2-5-transitions.html>
+  * <https://jsfiddle.net/kurotanshi/sdmkh7qa/>
+* Vue3 API Example
+  * <https://book.vue.tw/CH2/2-2-communications.html#vue-composition-api>
+  * <https://jsfiddle.net/kurotanshi/8hsc2yjg/>
+* baseAPI
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../../source/vue-next/packages/vue/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script>
+        console.log('Vue', Vue)
+        const {
+            createApp,
+            reactive, // 创建响应式数据对象
+            ref, // 创建一个响应式的数据对象
+            toRefs, // 将响应式数据对象转换为单一响应式对象
+            isRef, // 判断某值是否是引用类型
+            computed, // 创建计算属性
+            watch, // 创建watch监听
+            watchEffect,
+            // 生命周期钩子
+            onBeforeMount,
+            onMounted,
+            onUpdated,
+            onUnmounted,
+        } = Vue
+        const MyComponent = {
+            template: `
+            <div>
+                <div>count is {{ state.count }} </div>
+                <div>plusOne is {{ state.plusOne }}</div>
+                <div>Date is {{ time }}</div>
+                <div>count is {{ count }} </div>
+                <button @click="increment">count++</button>
+            </div>
+            `,
+            
+            setup(props, context) {
+                console.log('setup....',)
+                console.log('props',props)
+                console.log('context',context)
+
+
+                // reactive state
+                const state = reactive({
+                    count: 0,
+                    plusOne: computed(() => state.count + 1)
+                })
+
+                // 定义创建响应式数据
+                const time = ref(new Date())
+                // 设置定时器为了测试数据响应
+                setInterval(() => time.value = new Date(), 1000)
+
+                // 判断某值是否是响应式类型
+                console.log('time is ref:', isRef(time))
+                console.log('time', time)
+                console.log('time.value', time.value)
+
+                // method
+                const increment = () => {
+                    console.log('increment....')
+                    state.count++
+                }
+
+                // 定义监听
+                watch(() => state.count * 2, val => {
+                    console.log(`count * 2 is ${val}`)
+                })
+
+                // 副作用函数
+                watchEffect(() => {
+                    console.log('数值被修改了..',state.count)
+                })
+
+                // lifecycle
+                onBeforeMount(() => {
+                    console.log('onBeforeMount....')
+                })
+                onMounted(() => {
+                    console.log(`onMounted ...!`)
+                })
+                onUpdated(() => {
+                    console.log(`onUpdated ...!`)
+                })
+                onUnmounted(() => {
+                    console.log(`onUnmounted ...!`)
+                })
+                // expose bindings on render context
+                return {
+                    state,
+                    ... toRefs(state),
+                    time,
+                    increment
+                }
+            }
+        }
+        createApp(MyComponent).mount('#app')
+    </script>
+</body>
+
+</html>
+```
