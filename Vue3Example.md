@@ -13,6 +13,45 @@ Options API
 * methods
 * lifecycle methods
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../../source/vue-next/packages/vue/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <div id='app'></div>
+    <script>
+        const App = {
+            template: `
+                <button @click='click'>{{message}}</button>
+            `,
+            data() {
+                return {
+                    message: 'Hello Vue 3!!'
+                }
+            },
+            methods: {
+                click() {
+                    console.log('click ....', this.message)
+                    this.message = this.message.split('').reverse().join('')
+                }
+            }
+        }
+        let vm = Vue.createApp(App).mount( '#app')
+        // console.log(vm)
+    </script>
+</body>
+
+</html>
+```
+
 好處 => 功能依照上述六種類別展開，易懂
 
 壞處 => 開發維護時通常以單一功能為主，會在代碼中反覆橫跳，需要收合成單一 fn => function 才好開發
