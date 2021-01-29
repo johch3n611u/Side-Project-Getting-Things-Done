@@ -13,7 +13,7 @@ Options API
 * methods
 * lifecycle methods
 
-<details><summary>Vue2 Demo</summary>
+<details><summary></b>Vue2 Demo<b></summary>
 
 ```html
 <!DOCTYPE html>
