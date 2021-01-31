@@ -366,7 +366,10 @@ watch(
 );
 ```
 
-### ⭐ SharingState ⭐ <a id="SharingState" href="#top">Top</a>
+### ⭐ SharingState ⭐ 其實就是 AG 的 Service Component ... <a id="SharingState" href="#top">Top</a>
+
+差別在於這裡的例子多用 Promise 包了一層
+
 ### ⭐ Suspense ⭐ <a id="Suspense" href="#top">Top</a>
 
 全域 loading 畫面
