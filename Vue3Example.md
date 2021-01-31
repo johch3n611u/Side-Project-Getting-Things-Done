@@ -93,7 +93,7 @@ Options API
   1. [is / slot](#is)
   1. [Provide / Inject](#Provide)
 
-### Setup 類似 C# 建構子 <a id="Setup" href="#top">BackTop</a>
+### Setup 類似 C# 建構子 <a id="Setup" href="#top">Top</a>
 
 * 參數1 props - 属性 (响应式对象 且 可以监听(watch))
 
@@ -128,7 +128,7 @@ setup (props,context) {
 
 * [Demo](#demo)
 
-### ⭐ Reactive 声明响应式状态 => 類似 Rxjs 觀察者實例 <a id="Reactive"></a>
+### ⭐ Reactive 声明响应式状态 => 類似 Rxjs 觀察者實例 <a id="Reactive" href="#top">Top</a>
 
 * <https://v3.cn.vuejs.org/guide/reactivity.html>
 * 原理 Demo <https://github.com/su37josephxia/vue3-study/tree/master/demo/reactivity-demo>
@@ -174,7 +174,7 @@ export default {
 </script>
 ```
 
-### ⭐ Modularizing ⭐ <a id="Modularizing"></a>
+### ⭐ Modularizing ⭐ <a id="Modularizing" href="#top">Top</a>
 
 ```html
 <div id="app">
@@ -241,7 +241,7 @@ export default {
 }
 ```
 
-### ⭐ Methods / Computed ⭐ <a id="Methods"></a>
+### ⭐ Methods / Computed ⭐ <a id="Methods" href="#top">Top</a>
 
 1. JS ： 需要通过 .value 访问包装对象
 2. Template : 自动拆箱
@@ -303,7 +303,7 @@ export default {
 </script>
 ```
 
-### ⭐ LifecycleHooks ⭐ <a id="LifecycleHooks"></a>
+### ⭐ LifecycleHooks ⭐ <a id="LifecycleHooks" href="#top">Top</a>
 
 * [Demo](#demo)
 
@@ -321,7 +321,7 @@ export default {
 ||🎉onRenderTracked|
 ||🎉onRenderTriggered|
 
-### Watch <a id="Watch"></a>
+### Watch <a id="Watch" href="#top">Top</a>
 
 ```html
 // 所有依赖响应式对象监听
@@ -366,6 +366,10 @@ watch(
 );
 ```
 
+### ⭐ SharingState ⭐ <a id="SharingState" href="#top">Top</a>
+### ⭐ Suspense ⭐ <a id="Suspense" href="#top">Top</a>
+### ⭐ Teleport ⭐ <a id="Teleport" href="#top">Top</a>
+
 <br><br><br><br><br><br><br><br><br><br>
 
 ## 舊東西 ( 延續 Vue2 )
@@ -374,7 +378,7 @@ watch(
 * <https://book.vue.tw/>
 * 要注意属性名不區分大小寫， 驼峰 轉 kebab-cased 原因是 瀏覽器會自動大寫轉小寫再進行辨讀
 
-### ⭐ Props in, Event out 单向数据流 / Vue3 v-model 雙向綁定 ⭐ <a id="Props"></a>
+### ⭐ Props in, Event out 单向数据流 / Vue3 v-model 雙向綁定 ⭐ <a id="Props" href="#top">Top</a>
 
 * <https://book.vue.tw/CH2/2-2-communications.html>
 
@@ -473,17 +477,17 @@ app.mount('#app');
 <input :value="searchText" @input="searchText = $event.target.value" />
 ```
 
-### ⭐ is 動態元件 / slot 插槽 ⭐ <a id="is"></a>
+### ⭐ is 動態元件 / slot 插槽 ⭐ <a id="is" href="#top">Top</a>
 
 * <https://book.vue.tw/CH2/2-3-async-dynamic-components.html>
 * v-is 情境 table 內需要出現不是 th tr td 的 tag
 * <https://book.vue.tw/CH2/2-4-slots.html>
 
-### ⭐ Provide / Inject => 類似 Angular 的 Service 可能需要這種功能時就要考慮導入 AG ⭐ <a id="Provide"></a>
+### ⭐ Provide / Inject => 類似 Angular 的 Service 可能需要這種功能時就要考慮導入 AG ⭐ <a id="Provide" href="#top">Top</a>
 
 * 注入的資料不可變，但可以藉由，注入點用 Computed 包裝，成為連動資料
 
-### Demo <a id="demo"></a>
+### Demo <a id="demo" href="#top">Top</a>
 
 * <https://github.com/su37josephxia/vue3-study>
 * Vue3 Composition API Example
