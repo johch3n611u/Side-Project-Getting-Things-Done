@@ -370,13 +370,143 @@ watch(
 
 差別在於這裡的例子多用 Promise 包了一層
 
+* 编写一个公共函数usePromise函数需求如下：
+  * results : 返回Promise执行结果
+  * loading： 返回Promise运行状态
+    PENDING :true
+    REJECTED : false
+    RESOLVED: false
+  * error ： 返回执行错误
+  
+```html
+import { ref } from "vue";
+
+export default function usePromise(fn) {
+  const results = ref(null);
+  // is PENDING
+  const loading = ref(false);
+  const error = ref(null);
+
+  const createPromise = async (...args) => {
+    loading.value = true;
+    error.value = null;
+    results.value = null;
+    try {
+      results.value = await fn(...args);
+    } catch (err) {
+      error.value = err;
+    } finally {
+      loading.value = false;
+    }
+  };
+  return { results, loading, error, createPromise };
+}
+
+///////////////////////////////////////////////////////////
+
+import { ref, watch } from "vue";
+import usePromise from "./usePromise";
+export default {
+  setup() {
+    const searchInput = ref("");
+    function getEventCount() {
+      return new Promise((resolve) => {
+        setTimeout(() => resolve(3), 1000);
+      });
+    }
+
+    const getEvents = usePromise((searchInput) => getEventCount());
+
+    watch(searchInput, () => {
+      if (searchInput.value !== "") {
+        getEvents.createPromise(searchInput);
+      } else {
+        getEvents.results.value = null;
+      }
+    });
+
+    return { searchInput, ...getEvents };
+  },
+};
+```
+
 ### ⭐ Suspense ⭐ <a id="Suspense" href="#top">Top</a>
 
 全域 loading 畫面
 
+```html
+<template>
+  <div>
+    <div v-if="error">Uh oh .. {{ error }}</div>
+    <Suspense>
+      <template #default>
+        <div>
+          <Event />
+          <AsyncEvent />
+        </div>
+      </template>
+      <template #fallback> Loading.... </template>
+    </Suspense>
+  </div>
+</template>
+
+<script>
+import { ref, onErrorCaptured, defineAsyncComponent } from "vue";
+
+import Event from "./Event.vue";
+
+const AsyncEvent = defineAsyncComponent(() => import("./Event.vue"));
+export default {
+  components: {
+    Event,
+    AsyncEvent,
+  },
+
+  setup() {
+    const error = ref(null);
+    onErrorCaptured((e) => {
+      error.value = e;
+      // 阻止错误继续冒泡
+      return true;
+    });
+    return { error };
+  },
+};
+</script>
+```
+
 ### ⭐ Teleport ⭐ <a id="Teleport" href="#top">Top</a>
 
 類似 iframe
+
+```html
+<template>
+  <div>
+    <teleport to="#end-of-body" :disabled="!showText">
+      <!-- 【Teleport : This should be at the end 】 -->
+      <div>
+        <video src="../assets/flower.webm" muted controls="controls" autoplay="autoplay" loop="loop">
+          
+        </video>
+      </div>
+    </teleport>
+    <div>【Teleport : This should be at the top】</div>
+    <button @click="showText = !showText">Toggle showText</button>
+  </div>
+</template>
+<script>
+import { ref } from "vue";
+export default {
+  setup() {
+    const showText = ref(false);
+    setInterval(() => {
+      showText.value = !showText.value;
+    }, 1000);
+    return { showText };
+  },
+};
+</script>
+```
 
 <br><br><br><br><br><br><br><br><br><br>
 
