@@ -368,7 +368,12 @@ watch(
 
 ### ⭐ SharingState ⭐ <a id="SharingState" href="#top">Top</a>
 ### ⭐ Suspense ⭐ <a id="Suspense" href="#top">Top</a>
+
+全域 loading 畫面
+
 ### ⭐ Teleport ⭐ <a id="Teleport" href="#top">Top</a>
+
+類似 iframe
 
 <br><br><br><br><br><br><br><br><br><br>
 
