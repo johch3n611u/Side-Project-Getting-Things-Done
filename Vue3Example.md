@@ -133,7 +133,15 @@ setup (props,context) {
 * <https://v3.cn.vuejs.org/guide/reactivity.html>
 * 原理 Demo <https://github.com/su37josephxia/vue3-study/tree/master/demo/reactivity-demo>
 
+```js
+const {
+            reactive, // 创建响应式数据对象
+            ref, // 创建一个响应式的数据对象
+            toRefs, // 将响应式数据对象转换为单一响应式对象
+            isRef, // 判断某值是否是引用类型
+      } = Vue
 
+```
 
 ### ⭐ Modularizing ⭐ <a id="Modularizing"></a>
 
