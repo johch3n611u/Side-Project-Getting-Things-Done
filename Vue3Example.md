@@ -133,14 +133,41 @@ setup (props,context) {
 * <https://v3.cn.vuejs.org/guide/reactivity.html>
 * 原理 Demo <https://github.com/su37josephxia/vue3-study/tree/master/demo/reactivity-demo>
 
-```js
+```html
+<div>
+    <p>Space Left:{{ spaceLeft }} out of {{ capacity }}</p>
+    <h2>Attending</h2>
+    <ul>
+      <li v-for="(name, index) in attending" :key="index">
+        {{ name }}
+      </li>
+    </ul>
+    <button @click="increaseCapacity()">Increase Capacity</button>
+</div>
+
+<script>
 const {
             reactive, // 创建响应式数据对象
             ref, // 创建一个响应式的数据对象
             toRefs, // 将响应式数据对象转换为单一响应式对象
             isRef, // 判断某值是否是引用类型
       } = Vue
-
+    
+setup() {
+    const event = reactive({
+      capacity: 4,
+      attending: ["Tim", "Bob", "Joe"],
+      spaceLeft: computed(() => {
+        return event.capacity - event.attending.length;
+      }),
+    });
+    function increaseCapacity() {
+      event.capacity++;
+    }
+    return { ...toRefs(event), increaseCapacity };
+},   
+    
+</script>
 ```
 
 ### ⭐ Modularizing ⭐ <a id="Modularizing"></a>
