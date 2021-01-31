@@ -241,7 +241,7 @@ export default {
 }
 ```
 
-### ⭐ Methods / Computed ⭐
+### ⭐ Methods / Computed ⭐ <a id="Methods"></a>
 
 1. JS ： 需要通过 .value 访问包装对象
 2. Template : 自动拆箱
@@ -303,6 +303,69 @@ export default {
 </script>
 ```
 
+### ⭐ LifecycleHooks ⭐ <a id="LifecycleHooks"></a>
+
+* [Demo](#demo)
+
+|-|-|
+|Vue2|Vue3|
+|beforeCreate|❌setup(替代)|
+|created|❌setup(替代)|
+|beforeMount|onBeforeMount|
+|mounted|onMounted|
+|beforeUpdate|onBeforeUpdate|
+|updated|onUpdated|
+|beforeDestroy|onBeforeUnmount|
+|destroyed|onUnmounted|
+|errorCaptured|onErrorCaptured|
+||🎉onRenderTracked|
+||🎉onRenderTriggered|
+
+### Watch <a id="Watch"></a>
+
+```html
+// 所有依赖响应式对象监听
+watchEffect(() => {
+   results.value = getEventCount(searchInput.value);
+ });
+
+// 特定响应式对象监听
+watch(
+  searchInput,
+  () => {
+    console.log("watch searchInput:");
+  }
+);
+
+// 特定响应式对象监听 可以获取新旧值
+watch(
+  searchInput,
+ (newVal, oldVal) => {
+    console.log("watch searchInput:", newVal, oldVal);
+  },
+);
+
+// 多响应式对象监听
+watch(
+  [firstName,lastName],
+ ([newFirst,newLast], [oldFirst,oldlast]) => {
+   // .....
+  },
+  
+);
+
+// 非懒加载方式监听 可以设置初始值
+watch(
+  searchInput,
+  (newVal, oldVal) => {
+    console.log("watch searchInput:", newVal, oldVal);
+  },
+  {
+    immediate: true, 
+  }
+);
+```
+
 <br><br><br><br><br><br><br><br><br><br>
 
 ## 舊東西 ( 延續 Vue2 )
@@ -311,7 +374,7 @@ export default {
 * <https://book.vue.tw/>
 * 要注意属性名不區分大小寫， 驼峰 轉 kebab-cased 原因是 瀏覽器會自動大寫轉小寫再進行辨讀
 
-### ⭐ Props in, Event out 单向数据流 / Vue3 v-model 雙向綁定 ⭐
+### ⭐ Props in, Event out 单向数据流 / Vue3 v-model 雙向綁定 ⭐ <a id="Props"></a>
 
 * <https://book.vue.tw/CH2/2-2-communications.html>
 
@@ -410,13 +473,13 @@ app.mount('#app');
 <input :value="searchText" @input="searchText = $event.target.value" />
 ```
 
-### ⭐ is 動態元件 / slot 插槽 ⭐
+### ⭐ is 動態元件 / slot 插槽 ⭐ <a id="is"></a>
 
 * <https://book.vue.tw/CH2/2-3-async-dynamic-components.html>
 * v-is 情境 table 內需要出現不是 th tr td 的 tag
 * <https://book.vue.tw/CH2/2-4-slots.html>
 
-### ⭐ Provide / Inject => 類似 Angular 的 Service 可能需要這種功能時就要考慮導入 AG ⭐
+### ⭐ Provide / Inject => 類似 Angular 的 Service 可能需要這種功能時就要考慮導入 AG ⭐ <a id="Provide"></a>
 
 * 注入的資料不可變，但可以藉由，注入點用 Computed 包裝，成為連動資料
 
