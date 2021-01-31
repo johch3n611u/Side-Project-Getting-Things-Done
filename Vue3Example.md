@@ -128,13 +128,21 @@ setup (props,context) {
 
 * [Demo](#demo)
 
-### ⭐ Reactive 声明响应式状态 => 類似 Rxjs 觀察者實例
+### ⭐ Reactive 声明响应式状态 => 類似 Rxjs 觀察者實例 <a id="Reactive"></a>
 
 * <https://v3.cn.vuejs.org/guide/reactivity.html>
 * 原理 Demo <https://github.com/su37josephxia/vue3-study/tree/master/demo/reactivity-demo>
 
 ```html
-<div>
+const {
+            reactive, // 创建响应式数据对象
+            ref, // 创建一个响应式的数据对象
+            toRefs, // 将响应式数据对象转换为单一响应式对象
+            isRef, // 判断某值是否是引用类型
+      } = Vue
+    
+<template>
+  <div>
     <p>Space Left:{{ spaceLeft }} out of {{ capacity }}</p>
     <h2>Attending</h2>
     <ul>
@@ -143,17 +151,12 @@ setup (props,context) {
       </li>
     </ul>
     <button @click="increaseCapacity()">Increase Capacity</button>
-</div>
-
+  </div>
+</template>
 <script>
-const {
-            reactive, // 创建响应式数据对象
-            ref, // 创建一个响应式的数据对象
-            toRefs, // 将响应式数据对象转换为单一响应式对象
-            isRef, // 判断某值是否是引用类型
-      } = Vue
-    
-setup() {
+import { reactive, computed, toRefs } from "vue";
+export default {
+  setup() {
     const event = reactive({
       capacity: 4,
       attending: ["Tim", "Bob", "Joe"],
@@ -165,8 +168,9 @@ setup() {
       event.capacity++;
     }
     return { ...toRefs(event), increaseCapacity };
-},   
-    
+  },
+};
+</script>
 </script>
 ```
 
@@ -235,6 +239,68 @@ export default {
      //    other2
      // }
 }
+```
+
+### ⭐ Methods / Computed ⭐
+
+1. JS ： 需要通过 .value 访问包装对象
+2. Template : 自动拆箱
+
+> Methods
+
+```html
+<template>
+    <div>
+        <p>Capacity: {{capacity}}</p>
+        <button @click="increaseCapacity()">Increase Capacity</button>
+    </div>
+</template>
+
+<script>
+    import { ref } from "vue";
+    export default 
+    {
+        setup(){
+            const capacity = ref(3);
+            
+            function increaseCapacity {
+                capacity.value++;
+            }
+            
+            return { capacity , increaseCapacity }
+        }
+    };
+</script>
+```
+
+> Computed
+
+```html
+<template>
+  <div>
+    <div>Capacity： {{ capacity }}</div>
+    <p>Spases Left: {{ sapcesLeft }} out of {{ capacity }}</p>
+    <button @click="increaseCapacity()">Increase Capacity</button>
+  </div>
+</template>
+
+<script>
+
+import { ref, computed, watch } from "vue";
+export default {
+  setup(props, context) {
+    const capacity = ref(3);
+    const attending = ref(["Tim", "Bob", "Joe"]);
+    function increaseCapacity() {
+      capacity.value++;
+    }
+    const sapcesLeft = computed(() => {
+      return capacity.value - attending.value.length;
+    });
+    return { capacity, increaseCapacity, attending, sapcesLeft };
+  },
+};
+</script>
 ```
 
 <br><br><br><br><br><br><br><br><br><br>
