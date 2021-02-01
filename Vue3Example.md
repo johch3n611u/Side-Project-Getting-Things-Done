@@ -171,7 +171,6 @@ export default {
   },
 };
 </script>
-</script>
 ```
 
 ### ⭐ Modularizing ⭐ <a id="Modularizing" href="#top">Top</a>
