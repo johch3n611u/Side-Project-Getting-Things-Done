@@ -7,7 +7,14 @@
 ## 引言
 
 * 2021 年 02 月 05 日
+
   [如何不編譯直接在前端瀏覽器使用Vue.js插件？以vue-slim-tabs為例 / How to use Vue.js Plugins in Browser Without Module Bundler?](http://blog.pulipuli.info/2019/10/vuejsvue-slim-tabs-how-to-use-vuejs.html#postcatavuejsvue-slim-tabs-how-to-use-vuejs.html0_anchor12)
+  
+  終於了解其實前端大致上分為 cdn 與 node.js Command 兩種流派，
+  
+  通常各大框架都走 node.js Command 的方式來處理，框架系統建立，
+  
+  而 vue 主打漸進式，似乎是可以用 cdn 方式或 import export 方式引入，
 
 * 2021 年 01 月 27 日
 
