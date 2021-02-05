@@ -6,6 +6,9 @@
 
 ## 引言
 
+* 2021 年 02 月 05 日
+  [如何不編譯直接在前端瀏覽器使用Vue.js插件？以vue-slim-tabs為例 / How to use Vue.js Plugins in Browser Without Module Bundler?](http://blog.pulipuli.info/2019/10/vuejsvue-slim-tabs-how-to-use-vuejs.html#postcatavuejsvue-slim-tabs-how-to-use-vuejs.html0_anchor12)
+
 * 2021 年 01 月 27 日
 
   在研究到 Vue3 ( 輕前端可能需要進階到 cdn vue router 與 vue vuex ) 且準備 figma 再繼續架構時發現 ...
