@@ -28,9 +28,9 @@
   
   目前考慮完成此專案 [不使用Vue-cli的情況下，只使用Vue.js、Vue-router實現單頁應用](https://kknews.cc/zh-tw/code/pexegmz.html)，
   
-  稍微了解人工引入與人工模組化後，
+  稍微了解人工引入與人工模組化後，方便以後前台使用此架構建置
   
-  就乾脆用 angular2+ 寫，專注在研究各大好用的 [AG UI 庫](https://www.google.com/search?q=angular+ui&oq=angular+ui&aqs=chrome..69i57j69i59j69i65j69i61.4119j0j7&sourceid=chrome&ie=UTF-8)，與 Component 客製化，否則 MVP 會花時間在很多額外的地方。
+  後台就乾脆直接用 angular2+ 寫，專注在研究各大好用的 [AG UI 庫](https://www.google.com/search?q=angular+ui&oq=angular+ui&aqs=chrome..69i57j69i59j69i65j69i61.4119j0j7&sourceid=chrome&ie=UTF-8)，與 Component 客製化，否則 MVP 會花時間在很多額外的地方。
 
 * 2021 年 01 月 27 日
 
