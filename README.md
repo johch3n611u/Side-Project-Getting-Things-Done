@@ -24,7 +24,7 @@
   
   再者目前前端開發似乎都是 使用 UI 庫 搭配少量客製化 Component ，
   
-  似乎應該專注於商業邏輯，而不是在這邊搞腳手架...
+  似乎應該專注於商業邏輯，而不是在這邊搞腳手架 ( 最近幫老弟看別人 Vue 光搞環境架設專案 ( Webpack 那些) 就搞超久最後還沒架起來 )...
   
   目前考慮完成此專案 [不使用Vue-cli的情況下，只使用Vue.js、Vue-router實現單頁應用](https://kknews.cc/zh-tw/code/pexegmz.html)，
   
