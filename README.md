@@ -16,7 +16,17 @@
   
   而 vue 主打漸進式，似乎是可以用 cdn 方式或 import export 方式引入，
   
-  但非主流且人工引入的狀態下，還是蠻多坑的，也不是每種 函式庫都支援，引入與安裝
+  但非主流且人工引入的狀態下，還是蠻多坑的，也不是每種 函式庫都支援，引入與安裝，
+  
+  且如需使用 .vue 檔 module / component 化，還需額外載入 vue-loader 套件，
+  
+  再者目前前端開發似乎都是 使用 UI 庫 搭配少量客製化 Component ，
+  
+  似乎應該專注於商業邏輯而不是在這邊搞腳手架，
+  
+  目前考慮完成此專案 [不使用Vue-cli的情況下，只使用Vue.js、Vue-router實現單頁應用](https://kknews.cc/zh-tw/code/pexegmz.html)，
+  
+  就乾脆用 angular 寫，研究各大好用的 [AG UI 庫](https://www.google.com/search?q=angular+ui&oq=angular+ui&aqs=chrome..69i57j69i59j69i65j69i61.4119j0j7&sourceid=chrome&ie=UTF-8)，與 Component 客製化，否則 MVP 會花時間在很多額外的地方。
 
 * 2021 年 01 月 27 日
 
