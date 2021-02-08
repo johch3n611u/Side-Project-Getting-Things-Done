@@ -8,8 +8,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/vue@next"></script>
     <!-- https://book.vue.tw/CH4/4-1-vue-router-intro.html#vue-router-%E4%BB%8B%E7%B4%B9 -->
@@ -18,18 +16,19 @@
 
 </head>
 <div class="container" id="app">
-    <router-link to="/">Go to Home</router-link>
+    <router-link to="/VueSample/MutiPage/Login">Go to Home</router-link>
     <router-view></router-view>
 </div>
-<script src="./Components//login/login.js"></script>
+<script src="./Components/login/login.js"></script>
+<script src="./Components/table/table.js"></script>
 <script>
     // 引用元件
     //import Login from './Components/login/login.js';
     // 指定 URL 與對應的元件
     const routes = [
-        { path: '/:pathMatch(.*)*', redirect: '/' },
-        { path: '/', component: Login },
-        //{ path: '/about', component: About },
+        //{ path: '/:catchAll(.*)', redirect: '/VueSample/MutiPage/index.html/Login' },
+        { path: '/VueSample/MutiPage/Login', component: Login },
+        { path: '/VueSample/MutiPage/Table', component: Table },
     ]
 
     // 建立 VueRouter 實體物件

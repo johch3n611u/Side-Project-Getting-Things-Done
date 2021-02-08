@@ -6,7 +6,8 @@
                 template: res,
                 setup(props, context) {
                     const login = function (){
-                        router.push('/table');
+                        console.log(router);
+                        router.push('/VueSample/MutiPage/Table');
                     }
                     return {
                         login

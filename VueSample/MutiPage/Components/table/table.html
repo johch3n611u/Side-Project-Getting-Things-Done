@@ -1,10 +1,18 @@
-<div class="form-signin">
-    <link href="login.css" rel="stylesheet" type="text/css" /><!-- 頁面樣式 -->
-    <h2 class="form-signin-heading">請登錄</h2>
-    <label for="userName" class="sr-only">用戶名</label>
-    <input type="text" id="userName" class="form-control" placeholder="用戶名" required="" autofocus="">
-    <label for="password" class="sr-only">密碼</label>
-    <input type="password" id="password" class="form-control" placeholder="密碼" required="">
-    <button class="btn btn-lg btn-primary btn-block" type="submit" style="pointer-events: auto;"
-        @click="login">登錄</button>
+<div class="container" id="app">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th class="column">用戶名</th>
+                <th class="column">姓名</th>
+                <th class="column">創建時間</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="user in users">
+                <td class="column">{{user.account}}</td>
+                <td class="column">{{user.name}}</td>
+                <td class="column">{{user.date}}</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
