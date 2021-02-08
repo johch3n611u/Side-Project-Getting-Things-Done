@@ -20,9 +20,20 @@
     <script src="Components/login/login.js"></script>
 </head>
 <div class="container" id="app">
+    <router-link to="/">Go to Home</router-link>
     <router-view></router-view>
 </div>
 <script>
+
+    const Login = async function () {
+        // 可以請求一個html文件，既然存放模板還是html文件存放比較好
+        return await $.get("./Components/login/login.html").then(function (res) {
+            return {
+                template: res,
+            }
+        });
+    };
+
     console.log(location.href);
 
     // 引用元件
