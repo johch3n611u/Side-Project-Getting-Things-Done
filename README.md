@@ -14,23 +14,23 @@
   
   通常各大框架都走 node.js Command `指令產生` 的方式來處理 `框架系統建立`，
   
-  而 vue 主打漸進式，似乎是可以用 cdn 方式或 import export 方式`人工引入`，
+  而 vue 主打漸進式，可以用 cdn import export 方式`人工引入`，
   
-  但非主流且人工引入的狀態下，還是蠻多坑的，也不是每種 函式庫都支援，人工引入與安裝，
+  但非主流且人工引入的狀態下，蠻多坑的，也不是每種 函式庫都支援，人工引入與安裝，
   
-  且如需使用 .vue 檔 module / component 化，還需額外載入 vue-loader 套件，
+  如需使用 .vue 檔 module / component 化，還需額外載入 vue-loader cdn 套件，進行即時轉譯效能或有落差
   
   <br>
   
   再者目前前端開發似乎都是 使用 UI 庫 搭配少量客製化 Component ，
   
-  似乎應該專注於商業邏輯，而不是在這邊搞腳手架 ( 最近幫老弟看別人 Vue 光搞環境架設專案 ( Webpack 那些) 就搞超久最後還沒架起來 )...
+  似乎應該專注於商業邏輯，而不是在這邊搞腳手架，最近幫老弟看別人 Vue 光搞環境架設專案 Webpack,lib version etc... 就搞超久最後還沒架起來
   
   目前考慮完成此專案 [不使用Vue-cli的情況下，只使用Vue.js、Vue-router實現單頁應用](https://kknews.cc/zh-tw/code/pexegmz.html)，
   
-  稍微了解人工引入與人工模組化後，方便以後前台使用此架構建置
+  了解引入與不使用 .vue 模組化後，方便以後前台使用此架構建置，
   
-  後台就乾脆直接用 angular2+ 寫，專注在研究各大好用的 [AG UI 庫](https://www.google.com/search?q=angular+ui&oq=angular+ui&aqs=chrome..69i57j69i59j69i65j69i61.4119j0j7&sourceid=chrome&ie=UTF-8)，與 Component 客製化，否則 MVP 會花時間在很多額外的地方。
+  後台就用 angular2+ 寫，專注在研究各大好用的 [AG UI 庫](https://www.google.com/search?q=angular+ui&oq=angular+ui&aqs=chrome..69i57j69i59j69i65j69i61.4119j0j7&sourceid=chrome&ie=UTF-8)，與 Component 客製化，MVP 把時間花值得的地方。
 
 * 2021 年 01 月 27 日
 
