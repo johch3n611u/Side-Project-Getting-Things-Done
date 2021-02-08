@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <!-- https://book.vue.tw/CH4/4-1-vue-router-intro.html#vue-router-%E4%BB%8B%E7%B4%B9 -->
+    <script src="https://unpkg.com/vue-router@4"></script>
+    <script type="module" src="router.js"></script>
+    <!-- https://blog.csdn.net/feinifi/article/details/103691194 -->
+    <script type="module" src="main.js"></script>
+    <script src="Components/login/login.js"></script>
+</head>
+<div class="container" id="app">
+    <router-view></router-view>
+</div>
+<script>
+    console.log(location.href);
+
+    // 引用元件
+    //import Login from './Components/login/login';
+
+    // 指定 URL 與對應的元件
+    const routes = [
+        { path: '/', component: Login },
+        //{ path: '/about', component: About },
+    ]
+    // 建立 VueRouter 實體物件
+    const router = VueRouter.createRouter(
+        {
+            history: VueRouter.createWebHistory(),
+            routes: routes,
+        }
+    );
+
+    const {
+        createApp,
+        reactive, // 创建响应式数据对象
+        ref, // 创建一个响应式的数据对象
+        toRefs, // 将响应式数据对象转换为单一响应式对象
+        isRef, // 判断某值是否是引用类型
+        computed, // 创建计算属性
+        watch, // 创建watch监听
+        watchEffect,
+        // 生命周期钩子
+        onBeforeMount,
+        onMounted,
+        onUpdated,
+        onUnmounted,
+    } = Vue
+    // 建立 Vue 實體元件
+    const app = Vue.createApp({});
+    // 透過 app.use(router) 使 app 的所有子元件
+    // 都能存取 this.$router 與 this.$route
+    app.use(router);
+    // 掛載 Vue.js 實體至 DOM
+    app.mount('#app');
+</script>
+</body>
+
+</html>
