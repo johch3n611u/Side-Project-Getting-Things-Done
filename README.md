@@ -6,7 +6,7 @@
 
 ## 引言
 
-[黑暗執行續 - 輕前端](https://blog.darkthread.net/blog/vue-3-release/)
+* [黑暗執行續 - 輕前端](https://blog.darkthread.net/blog/vue-3-release/)
 
 * 2021 年 02 月 05 日
 
