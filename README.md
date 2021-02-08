@@ -6,6 +6,8 @@
 
 ## 引言
 
+* [黑暗執行續 - 輕前端](https://blog.darkthread.net/blog/vue-3-release/)
+
 * 2021 年 02 月 05 日
 
   [如何不編譯直接在前端瀏覽器使用Vue.js插件？以vue-slim-tabs為例](http://blog.pulipuli.info/2019/10/vuejsvue-slim-tabs-how-to-use-vuejs.html#postcatavuejsvue-slim-tabs-how-to-use-vuejs.html0_anchor12)
