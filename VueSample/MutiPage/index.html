@@ -14,36 +14,24 @@
     <script src="https://unpkg.com/vue@next"></script>
     <!-- https://book.vue.tw/CH4/4-1-vue-router-intro.html#vue-router-%E4%BB%8B%E7%B4%B9 -->
     <script src="https://unpkg.com/vue-router@4"></script>
-    <script type="module" src="router.js"></script>
     <!-- https://blog.csdn.net/feinifi/article/details/103691194 -->
-    <script type="module" src="main.js"></script>
-    <script src="Components/login/login.js"></script>
+
 </head>
 <div class="container" id="app">
     <router-link to="/">Go to Home</router-link>
     <router-view></router-view>
 </div>
+<script src="./Components//login/login.js"></script>
 <script>
-
-    const Login = async function () {
-        // 可以請求一個html文件，既然存放模板還是html文件存放比較好
-        return await $.get("./Components/login/login.html").then(function (res) {
-            return {
-                template: res,
-            }
-        });
-    };
-
-    console.log(location.href);
-
     // 引用元件
-    //import Login from './Components/login/login';
-
+    //import Login from './Components/login/login.js';
     // 指定 URL 與對應的元件
     const routes = [
+        { path: '/:pathMatch(.*)*', redirect: '/' },
         { path: '/', component: Login },
         //{ path: '/about', component: About },
     ]
+
     // 建立 VueRouter 實體物件
     const router = VueRouter.createRouter(
         {
