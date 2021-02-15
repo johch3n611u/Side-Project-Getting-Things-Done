@@ -10,7 +10,9 @@
 
   [黑暗執行續 - 輕前端](https://blog.darkthread.net/blog/vue-3-release/)
   
-  到這個階段
+  其實 SSR CSR SPA PWA AMP 在最一開始學習時就接觸到了，但在最近研究工作室架構要怎開時，
+  
+  才發現近年流行的 SPA 前端框架，其實也有 SSR+SPA 混和，針對 SEO / 首頁渲染 所做的 Solution => [雙端渲染](https://segmentfault.com/a/1190000020417285)
   
 * 2021 年 02 月 05 日
 
