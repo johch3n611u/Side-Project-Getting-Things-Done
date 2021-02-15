@@ -14,6 +14,10 @@
   
   才發現近年流行的 SPA 前端框架，其實也有 SSR+SPA 混和，針對 SEO / 首頁渲染 所做的 Solution => [雙端渲染](https://segmentfault.com/a/1190000020417285)
   
+  除了這以外發現水真的蠻深的，像是 AG UI 庫等等的也都需花時間整理學習，
+  
+  最好的方式就是趕快把 GTD 基礎先出來，後續需補強的就藉由此基礎再往上架...
+  
 * 2021 年 02 月 05 日
 
   [如何不編譯直接在前端瀏覽器使用Vue.js插件？以vue-slim-tabs為例](http://blog.pulipuli.info/2019/10/vuejsvue-slim-tabs-how-to-use-vuejs.html#postcatavuejsvue-slim-tabs-how-to-use-vuejs.html0_anchor12)
