@@ -14,7 +14,7 @@
   
   才發現近年流行的 SPA 前端框架，其實也有 SSR+SPA 混和，針對 SEO / 首頁渲染 所做的 Solution => [雙端渲染](https://segmentfault.com/a/1190000020417285)
   
-  除了這以外發現水真的蠻深的，像是 AG UI 庫等等的也都需花時間整理學習，
+  除了這以外發現水真的蠻深的，像是 [AG UI 庫](https://ithelp.ithome.com.tw/articles/10192187) / [.NET 設計原理](https://www.youtube.com/watch?v=_ougvb8mT7k&t=367s&ab_channel=NickChapsas) 也都需花時間整理學習，
   
   最好的方式就是趕快把 GTD 基礎先出來，後續需補強的就藉由此基礎再往上架...
   
