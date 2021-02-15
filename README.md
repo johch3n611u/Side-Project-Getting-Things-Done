@@ -8,7 +8,7 @@
 
 * 2021 年 02 月 09 日
 
-  其實 SSR CSR SPA PWA AMP 在最一開始學習時就接觸到了，但在最近研究工作室架構要怎開時，
+  其實 SSR CSR MPA SPA PWA AMP 在最一開始學習時就接觸到了，但在最近研究工作室架構要怎開時，
   
   除了 [黑暗執行續 - 輕前端](https://blog.darkthread.net/blog/vue-3-release/) 這種架構可用外，
   
