@@ -12,7 +12,7 @@
   
   除了 [黑暗執行續 - 輕前端](https://blog.darkthread.net/blog/vue-3-release/) 這種架構可用外，
   
-  才發現近年流行的 SPA 前端框架，其實也有 SSR+SPA 混和，針對 SEO / 首頁渲染 所做的 Solution => [雙端渲染](https://segmentfault.com/a/1190000020417285)
+  才發現近年流行的 SPA 前端框架，其實也有 [SSR+SPA 混和](https://blog.fundebug.com/2019/05/23/next-nuxt-nest/)，針對 SEO / 首頁渲染 所做的 Solution => [雙端渲染](https://segmentfault.com/a/1190000020417285)
   
   除了這以外發現水真的蠻深的，像是 [AG UI 庫](https://ithelp.ithome.com.tw/articles/10192187) / [.NET 設計原理](https://www.youtube.com/watch?v=_ougvb8mT7k&t=367s&ab_channel=NickChapsas) 也都需花時間整理學習，
   
