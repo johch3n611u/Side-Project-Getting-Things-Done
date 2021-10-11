@@ -6,6 +6,20 @@
 
 ## 引言
 
+* 2021 年 02 月 09 日
+
+  其實 SSR CSR MPA SPA PWA AMP 在最一開始學習時就接觸到了，但在最近研究工作室架構要怎開時，
+  
+  除了 [黑暗執行續 - 輕前端](https://blog.darkthread.net/blog/vue-3-release/) 這種架構可用外，
+  
+  才發現近年流行的 SPA 前端框架，其實也有 [SSR+SPA 混和](https://blog.fundebug.com/2019/05/23/next-nuxt-nest/)，針對 SEO / 首頁渲染 所做的 Solution => [雙端渲染](https://segmentfault.com/a/1190000020417285)
+  
+  除了這以外發現水真的蠻深的，像是 [AG UI 庫](https://ithelp.ithome.com.tw/articles/10192187) / [.NET 設計原理](https://www.youtube.com/watch?v=_ougvb8mT7k&t=367s&ab_channel=NickChapsas) 也都需花時間整理學習，
+  
+  最好的方式就是趕快把 GTD 基礎先出來，後續需補強的就藉由此基礎再往上架，反正後台架構基本上 SPA 就夠應付了...
+
+<br><br><br><br>
+
 * 2021 年 02 月 05 日
 
   [如何不編譯直接在前端瀏覽器使用Vue.js插件？以vue-slim-tabs為例](http://blog.pulipuli.info/2019/10/vuejsvue-slim-tabs-how-to-use-vuejs.html#postcatavuejsvue-slim-tabs-how-to-use-vuejs.html0_anchor12)
@@ -32,6 +46,8 @@
   
   後台就用 angular2+ 寫，專注在研究各大好用的 [AG UI 庫](https://www.google.com/search?q=angular+ui&oq=angular+ui&aqs=chrome..69i57j69i59j69i65j69i61.4119j0j7&sourceid=chrome&ie=UTF-8)，與 Component 客製化，MVP 把時間花值得的地方。
 
+<br><br><br><br>
+
 * 2021 年 01 月 27 日
 
   在研究到 Vue3 ( 輕前端可能需要進階到 cdn vue router 與 vue vuex ) 且準備 figma 再繼續架構時發現 ...
@@ -55,6 +71,8 @@
   * Calendar
   * CRM
 
+<br><br><br><br>
+
 * 2020 年 12 月 14 日
 
   先前想依照 [OKR KPI 做的管理工具](https://github.com/johch3n611u/Side-Project-Firebase-to-WebDatabase)，目前看來是失敗了，
@@ -66,6 +84,8 @@
   目前要優先評估 Firebase 還是 GoogleSheet 較適合開發此 GTD 工具，
 
   並先想好架構在開發以免碰上相同問題，改由後來接觸到感覺更適合的管理方法 GTD。
+
+<br><br><br><br>
 
 ## 架構分析
 

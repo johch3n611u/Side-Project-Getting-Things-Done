@@ -1,0 +1,18 @@
+<div class="container" id="app">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th class="column">用戶名</th>
+                <th class="column">姓名</th>
+                <th class="column">創建時間</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="user in users">
+                <td class="column">{{user.account}}</td>
+                <td class="column">{{user.name}}</td>
+                <td class="column">{{user.date}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

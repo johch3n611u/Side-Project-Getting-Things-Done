@@ -7,19 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/vue@next"></script>
     <!-- https://book.vue.tw/CH4/4-1-vue-router-intro.html#vue-router-%E4%BB%8B%E7%B4%B9 -->
     <script src="https://unpkg.com/vue-router@4"></script>
-    <script type="module" src="router.js"></script>
     <!-- https://blog.csdn.net/feinifi/article/details/103691194 -->
-    <script type="module" src="main.js"></script>
-    <script src="Components/login/login.js"></script>
+
 </head>
 <div class="container" id="app">
+    <router-link to="/VueSample/MutiPage/Login">Go to Home</router-link>
     <router-view></router-view>
 </div>
+<script src="./Components/login/login.js"></script>
+<script src="./Components/table/table.js"></script>
 <script>
     console.log('location.href', location.href);
 
