@@ -6,10 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/vue@next"></script>
     <!-- https://book.vue.tw/CH4/4-1-vue-router-intro.html#vue-router-%E4%BB%8B%E7%B4%B9 -->
@@ -23,23 +21,25 @@
     <router-view></router-view>
 </div>
 <script>
-    console.log(location.href);
+    console.log('location.href', location.href);
 
     // 引用元件
     //import Login from './Components/login/login';
 
+    console.log('Login Component', Login);
+
     // 指定 URL 與對應的元件
-    const routes = [
-        { path: '/', component: Login },
-        //{ path: '/about', component: About },
-    ]
-    // 建立 VueRouter 實體物件
-    const router = VueRouter.createRouter(
-        {
-            history: VueRouter.createWebHistory(),
-            routes: routes,
-        }
-    );
+    const routes = [{
+                path: '/',
+                component: Login
+            },
+            //{ path: '/about', component: About },
+        ]
+        // 建立 VueRouter 實體物件
+    const router = VueRouter.createRouter({
+        history: VueRouter.createWebHistory(),
+        routes: routes,
+    });
 
     const {
         createApp,
